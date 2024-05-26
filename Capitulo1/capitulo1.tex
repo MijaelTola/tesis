@@ -1,0 +1,122 @@
+\chapter{Marco Referencial}
+\section{Introducción}
+La teoría de grafos es una herramienta poderosa en diversas áreas de la ciencia y la ingeniería, es una rama de las matemáticas y las ciencias de la computación que se ocupa del estudio de grafos, que son estructuras compuestas por nodos conectados por aristas. Este campo encuentra aplicaciones en diversas áreas, incluyendo la optimización de redes, la sociología, la planificación urbana, la biología computacional, y más. Los grafos aleatorios, en particular, son un tipo de grafo donde la estructura tiene algún elemento de aleatoriedad, lo que los hace útiles para modelar situaciones reales en las que el diseño exacto del grafo no se conoce de antemano \citep{Newman2010}.
+En las últimas décadas, los modelos generadores de grafos aleatorios han adquirido una gran relevancia en el análisis de redes complejas, permitiendo a los investigadores comprender mejor las propiedades emergentes de estos sistemas. Las redes complejas abarcan una amplia gama de sistemas, desde redes sociales y de comunicación hasta redes biológicas y tecnológicas. Un aspecto crucial del estudio de estas redes es identificar y comprender las propiedades estructurales que emergen de la interacción entre sus componentes.
+
+El modelo de Erdős-Rényi, introducido en la década de 1960, fue uno de los primeros intentos de formalizar la generación de grafos aleatorios. Este modelo se basa en la premisa de que cada par de nodos tiene una probabilidad fija de estar conectado por una arista, lo que conduce a una distribución binomial de los grados de los nodos \citep{Erdos1959}. Aunque este modelo es matemáticamente simple y proporciona una base sólida para el estudio de grafos aleatorios, tiene limitaciones en su capacidad para replicar algunas de las propiedades observadas en redes reales, como la distribución de grados de ley de potencia y el alto coeficiente de agrupamiento.
+
+Para abordar algunas de estas limitaciones, surgieron modelos más sofisticados, como el modelo de Barabási-Albert y el modelo de Watts-Strogatz. El modelo de Barabási-Albert introduce los conceptos de crecimiento y preferencia de conexión, resultando en una distribución de grados que sigue una ley de potencia \citep{Barabasi1999}. Este modelo ha sido fundamental para explicar la presencia de "hubs" o nodos altamente conectados en redes reales, una característica que no se observa en el modelo de Erdős-Rényi.
+
+Por otro lado, el modelo de Watts-Strogatz busca capturar la propiedad de "pequeño mundo" observada en muchas redes reales, donde los nodos están altamente conectados localmente pero también presentan caminos cortos entre pares de nodos distantes \citep{Watts1998}. Este modelo combina la regularidad estructural con elementos aleatorios, proporcionando una mejor representación del agrupamiento y las distancias cortas típicas de las redes sociales y biológicas.
+
+El estudio de estos modelos generadores de grafos aleatorios no solo es relevante desde un punto de vista teórico, sino que también tiene importantes implicaciones prácticas. En el ámbito de las redes de comunicación, por ejemplo, comprender las propiedades estructurales puede ayudar a diseñar redes más robustas y eficientes. En biología, los modelos de grafos aleatorios pueden ser utilizados para entender la organización de redes de interacción de proteínas o redes neuronales, facilitando el desarrollo de nuevas terapias y tratamientos.
+
+A pesar de los avances significativos en el modelado de grafos aleatorios, sigue existiendo una brecha en la comprensión de cuál de estos modelos es más adecuado para diferentes tipos de redes y aplicaciones. La selección del modelo correcto puede tener un impacto significativo en la precisión de las simulaciones y en la capacidad para predecir comportamientos emergentes en redes complejas. Esta tesis se centra en la evaluación comparativa de los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz, utilizando un conjunto de métricas clave que incluyen el coeficiente de agrupamiento, la longitud promedio del camino más corto, la distribución de grados y la robustez frente a fallos y ataques.
+
+El objetivo principal de este estudio es identificar las fortalezas y debilidades de cada modelo, proporcionando una guía para seleccionar el modelo más adecuado en función de las características específicas de la red bajo estudio. A través de simulaciones computacionales y análisis estadísticos, se busca ofrecer una comprensión más profunda de cómo estos modelos pueden ser aplicados de manera efectiva en diferentes contextos.
+
+En los siguientes capítulos, se explorarán en detalle los fundamentos teóricos de cada modelo, la metodología utilizada para su implementación y los resultados de los experimentos comparativos. Se espera que los hallazgos de esta investigación contribuyan al desarrollo de mejores herramientas y técnicas para el análisis de redes complejas, así como a una mayor comprensión de las dinámicas subyacentes en estos sistemas.
+
+\section{Problema}
+\subsection{Antecedentes}
+Los modelos de grafos aleatorios han sido un área de interés en la teoría de grafos y las ciencias de la 
+computación durante décadas, ofreciendo conocimiento valiosos en el estudio de redes complejas. El modelo
+ de Erdős-Rényi, introducido en la década de 1960, es uno de los primeros y más estudiados modelos de grafos aleatorios, marcando un punto de partida para la investigación en este campo \citep{Erdos1959}.
+
+Las siguientes investigaciones proporcionan un marco importante para el estudio de modelos generadores de grafos aleatorios y han influido significativamente en el desarrollo de este campo:
+
+\begin{itemize}
+    \item \textbf{Título:} ``On Random Graphs I'' \\
+    \textbf{Autor:} P. Erdős y A. Rényi \\
+    \textbf{Año:} 1959 \\
+    \textbf{Institución:} Universidad de Debrecen \\
+    \textbf{Resumen:} Este trabajo introduce el modelo $G(n, p)$, explorando las propiedades emergentes de los grafos aleatorios a medida que la probabilidad de conexión entre pares de nodos varía. Es fundamental para comprender la fase de transición en la aparición de componentes gigantes dentro de redes complejas \citep{Erdos1959}.
+
+    \item \textbf{Título:} ``Emergence of Scaling in Random Networks'' \\
+    \textbf{Autor:} A.-L. Barabási y R. Albert \\
+    \textbf{Año:} 1999 \\
+    \textbf{Institución:} Universidad de Notre Dame \\
+    \textbf{Resumen:} Este artículo presenta el modelo de conexión preferencial, ilustrando cómo las redes reales tienden a formar una estructura de red libre de escala. El estudio demuestra que la dinámica de crecimiento y la conexión preferencial son mecanismos clave en la formación de redes con distribuciones de grado de ley de potencia \citep{Barabasi1999}.
+
+    \item \textbf{Título:} ``Collective dynamics of ‘small-world’ networks'' \\
+    \textbf{Autor:} D.J. Watts y S.H. Strogatz \\
+    \textbf{Año:} 1998 \\
+    \textbf{Institución:} Universidad de Cornell \\
+    \textbf{Resumen:} Este documento introduce el modelo de mundo pequeño, destacando cómo puede lograrse un alto coeficiente de agrupamiento y caminos cortos promedio simultáneamente en redes. Los autores muestran que esta estructura es prevalente en muchas redes del mundo real, desde la red eléctrica hasta las redes neuronales \citep{Watts1998}.
+\end{itemize}
+
+Cada una de estas investigaciones contribuye a la base teórica y metodológica para el análisis y la comparación de modelos generadores de grafos aleatorios, destacando la diversidad y la evolución de los enfoques en este campo de estudio.
+
+
+\subsection{Planteamiento del Problema}
+A pesar de la existencia de varios modelos generadores de grafos aleatorios, hay una falta de comprensión integral sobre cuál de estos modelos ofrece la mejor representación y eficiencia en la simulación de redes complejas en diversos contextos. La selección adecuada de un modelo generador de grafos es crucial para investigadores y profesionales que buscan analizar y predecir comportamientos en redes complejas, tales como redes sociales, biológicas, o tecnológicas. Sin embargo, la variedad de modelos disponibles y sus distintas propiedades y aplicaciones hacen difícil determinar cuál es más adecuado para un propósito específico. Esta problemática se complica aún más por la ausencia de una comparación exhaustiva y sistemática que evalúe estos modelos bajo un conjunto común de criterios y en situaciones aplicables a la vida real \citep{Wilson2008, Bollobas2001, Caldarelli2007} .
+%A pesar de los avances significativos en el modelado de grafos aleatorios y su aplicación en diversos campos, persisten desafíos en la selección del modelo más adecuado para representar estructuras de red específicas.
+
+\subsection{Formulacion del problema}
+Determinar qué modelos generadores de grafos aleatorios proporcionan la mejor representación de las redes complejas en distintos contextos .
+
+
+\section{Objetivos}
+\subsection{Objetivo General}
+Comparar distintos modelos generadores de grafos aleatorios para identificar sus fortalezas, debilidades y aplicaciones óptimas .
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Describir los modelos generadores de grafos aleatorios más utilizados .
+    \item Implementar una serie de experimentos para comparar los modelos en términos de características de grafos .
+    \item Analizar la aplicabilidad de cada modelo en contextos específicos basados en los resultados obtenidos .
+\end{itemize}
+
+\section{Hipótesis}
+Entre los modelos generadores de grafos aleatorios estudiados, existe al menos uno que, bajo un conjunto definido de criterios de evaluación como la precisión en la representación de las propiedades estructurales de las redes complejas, eficiencia computacional y aplicabilidad en diversos contextos, demuestra ser significativamente más adecuado para simular redes complejas que los demás modelos.
+
+\section{Justificación}
+\subsection{Justificación Económica}
+El desarrollo de modelos más precisos puede tener un impacto económico considerable en industrias que dependen de la optimización de redes.
+\subsection{Justificación Social}
+Esta investigación contribuye al entendimiento de las redes sociales y su dinámica, lo que puede tener implicaciones en la formulación de políticas públicas y la gestión de crisis.
+\subsection{Justificación Científica}
+Científicamente, este estudio contribuye al cuerpo de conocimiento en teoría de grafos y ciencias de la computación .
+
+\section{Alcances}
+El estudio se enfoca en los modelos generadores de grafos aleatorios más reconocidos y aplicados en el campo.\\
+La investigación se limita a la comparación de modelos basados en los criterios predefinidos y no explorará variantes menos conocidas .
+
+\section{Metodología}
+
+Esta investigación adopta un enfoque cuantitativo para comparar los modelos generadores de grafos aleatorios más utilizados, utilizando tanto análisis teóricos como simulaciones computacionales. La metodología se divide en varias fases clave para asegurar una evaluación exhaustiva y sistemática de cada modelo .
+
+\subsection{Selección de Modelos}
+
+Los modelos seleccionados para esta comparación incluyen el modelo de Erdős-Rényi, el modelo de Barabási-Albert y el modelo de Watts-Strogatz, debido a su prevalencia en la literatura y su relevancia en la modelización de redes complejas . Estos modelos se escogen por su capacidad para representar diferentes aspectos de las redes, como la aleatoriedad, el crecimiento y la formación de agrupamientos .
+
+\subsection{Criterios de Evaluación}
+
+Para comparar los modelos, se establecen varios criterios de evaluación basados en las propiedades de los grafos generados, incluyendo:
+\begin{itemize}
+    %\item Distribución de grados
+    \item Coeficiente de agrupamiento
+    \item Longitud promedio de caminos
+    %\item Robustez de la red frente a fallos y ataques
+\end{itemize}
+
+\subsection{Recopilación y Análisis de Datos}
+
+El análisis de los modelos se basará en:
+\begin{enumerate}
+    \item Simulaciones computacionales: Utilizando software especializado en teoría de grafos, se generarán grafos aleatorios basados en cada modelo, con diferentes parámetros, para analizar las propiedades mencionadas.
+    \item Comparación con datos reales: Se utilizarán conjuntos de datos de redes reales disponibles públicamente para comparar las características de los grafos generados por los modelos con las propiedades de redes complejas reales.
+\end{enumerate}
+
+\subsection{Herramientas de Software}
+
+Se emplearán herramientas y bibliotecas de software como Python para la generación de grafos y la libreria Sympy para el cálculo de métricas estadisticas facilitando la simulación y análisis de los modelos .
+
+\subsection{Evaluación y Comparación de Modelos}
+
+Los resultados obtenidos de las simulaciones y el análisis de datos se compararán utilizando métodos estadísticos para determinar cuál de los modelos proporciona una representación más precisa de las redes complejas según los criterios establecidos .
+
+\subsection{Limitaciones Metodológicas}
+
+Se reconocen limitaciones en la metodología, incluyendo la dependencia de la calidad de los datos de redes reales y las simplificaciones inherentes a los modelos teóricos. Se tomarán medidas para mitigar estas limitaciones, como la verificación de resultados mediante múltiples simulaciones y la comparación con estudios previos .
+
+Esta metodología está diseñada para proporcionar una comprensión clara y objetiva de cómo diferentes modelos generadores de grafos aleatorios replican las propiedades de las redes complejas, con el fin de identificar las herramientas más adecuadas para aplicaciones específicas en la investigación y la industria .

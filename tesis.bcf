@@ -2791,6 +2791,43 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Newman2010</bcf:citekey>
+    <bcf:citekey order="2">Erdos1959</bcf:citekey>
+    <bcf:citekey order="3">Barabasi1999</bcf:citekey>
+    <bcf:citekey order="4">Watts1998</bcf:citekey>
+    <bcf:citekey order="5">Erdos1959</bcf:citekey>
+    <bcf:citekey order="6">Erdos1959</bcf:citekey>
+    <bcf:citekey order="7">Barabasi1999</bcf:citekey>
+    <bcf:citekey order="8">Watts1998</bcf:citekey>
+    <bcf:citekey order="9">Wilson2008</bcf:citekey>
+    <bcf:citekey order="9">Bollobas2001</bcf:citekey>
+    <bcf:citekey order="9">Caldarelli2007</bcf:citekey>
+    <bcf:citekey order="10">West2000</bcf:citekey>
+    <bcf:citekey order="10">Gross2004</bcf:citekey>
+    <bcf:citekey order="10">Castillo2005</bcf:citekey>
+    <bcf:citekey order="11">Wilson2008</bcf:citekey>
+    <bcf:citekey order="12">Wilson2008</bcf:citekey>
+    <bcf:citekey order="13">Newman2010</bcf:citekey>
+    <bcf:citekey order="13">Bollobas2001</bcf:citekey>
+    <bcf:citekey order="13">Caldarelli2007</bcf:citekey>
+    <bcf:citekey order="14">West2000</bcf:citekey>
+    <bcf:citekey order="14">Gross2004</bcf:citekey>
+    <bcf:citekey order="14">Castillo2005</bcf:citekey>
+    <bcf:citekey order="15">Erdos1959</bcf:citekey>
+    <bcf:citekey order="16">Barabasi1999</bcf:citekey>
+    <bcf:citekey order="17">Watts1998</bcf:citekey>
+    <bcf:citekey order="18">Barabasi1999</bcf:citekey>
+    <bcf:citekey order="19">Watts1998</bcf:citekey>
+    <bcf:citekey order="20">Newman2010</bcf:citekey>
+    <bcf:citekey order="21">Erdos1959</bcf:citekey>
+    <bcf:citekey order="22">Barabasi1999</bcf:citekey>
+    <bcf:citekey order="23">Watts1998</bcf:citekey>
+    <bcf:citekey order="24">Wilson2008</bcf:citekey>
+    <bcf:citekey order="25">Bollobas2001</bcf:citekey>
+    <bcf:citekey order="26">Caldarelli2007</bcf:citekey>
+    <bcf:citekey order="27">West2000</bcf:citekey>
+    <bcf:citekey order="28">Gross2004</bcf:citekey>
+    <bcf:citekey order="29">Castillo2005</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

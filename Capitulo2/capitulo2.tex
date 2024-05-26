@@ -1,0 +1,176 @@
+\chapter{Marco Teórico}
+
+\section{Introducción a la Teoría de Grafos}
+\subsection{Definición y Conceptos Básicos}
+
+La teoría de grafos es una rama de las matemáticas y las ciencias de la computación que estudia las propiedades de los grafos. Un \textbf{grafo} $G$ se define formalmente como un par ordenado $G = (V, E)$ compuesto por un conjunto $V$ de vértices o nodos y un conjunto $E$ de aristas o enlaces, donde una arista es un par de vértices que representa la conexión entre ellos. Los grafos se clasifican en varias categorías dependiendo de sus características específicas:
+
+\begin{itemize}
+    \item \textbf{Grafos dirigidos y no dirigidos:} En un grafo dirigido, las aristas tienen una dirección, indicando la relación de un vértice a otro. En contraste, las aristas de un grafo no dirigido no tienen dirección .
+    \item \textbf{Grafos ponderados y no ponderados:} Un grafo ponderado asigna un peso o costo a cada arista, que puede representar, por ejemplo, la distancia entre dos puntos. Los grafos no ponderados no asignan estos pesos .
+    \item \textbf{Grafos simples:} Un grafo simple no permite bucles (aristas que conectan un vértice consigo mismo) ni múltiples aristas entre el mismo par de vértices .
+\end{itemize}
+
+Además, algunos conceptos clave en la teoría de grafos incluyen:
+
+\begin{itemize}
+    \item \textbf{Caminos:} Una secuencia de vértices donde cada par consecutivo de vértices está conectado por una arista .
+    \item \textbf{Ciclos:} Un camino que comienza y termina en el mismo vértice, sin repetir ningún vértice o arista .
+    \item \textbf{Grafos conexos:} Un grafo no dirigido es conexo si existe un camino entre cualquier par de vértices. En grafos dirigidos, esta propiedad se denomina fuertemente conexo .
+    \item \textbf{Subgrafos:} Un subgrafo es un grafo cuyos vértices y aristas son todos subconjuntos de otro grafo .
+    \item \textbf{Grafos complementarios:} Dado un grafo simple $G = (V, E)$, su grafo complementario es un grafo que tiene los mismos vértices que $G$ pero cuyas aristas son aquellas que no están presentes en $G$ .
+\end{itemize}
+
+La teoría de grafos se aplica en numerosas disciplinas para modelar relaciones entre entidades en redes de transporte, comunicaciones, biología, informática, y más, ofreciendo herramientas poderosas para resolver problemas complejos en ciencia e ingeniería \citep{West2000, Gross2004, Castillo2005} .
+
+\section{Historia y Desarrollo}
+
+La teoría de grafos, como campo matemático formal, tuvo sus inicios en el siglo XVIII con el trabajo del matemático suizo Leonhard Euler. En 1736, Euler abordó el famoso \textit{Problema de los Puentes de Königsberg}, considerado el primer teorema de la teoría de grafos. El problema preguntaba si era posible cruzar los siete puentes de la ciudad de Königsberg sin cruzar ninguno más de una vez y regresar al punto de partida. Euler demostró que esto no era posible, introduciendo el concepto de grafos en el proceso \citep{Wilson2008}.
+Este trabajo pionero sentó las bases para el desarrollo de la teoría de grafos. Durante el siglo XIX y principios del XX, el campo creció lentamente, pero la introducción de la computación y la necesidad de algoritmos eficientes en la segunda mitad del siglo XX aceleraron su desarrollo. La teoría de grafos se convirtió en una herramienta crucial para la informática, especialmente en áreas como la teoría de algoritmos, estructuras de datos, y la optimización de redes .
+Un hito importante en el desarrollo de la teoría de grafos fue el \textit{Teorema de los Cuatro Colores}, propuesto por primera vez en 1852, que afirma que cualquier mapa plano puede ser coloreado con no más de cuatro colores de manera que no haya dos regiones adyacentes del mismo color. Aunque el teorema fue propuesto en el siglo XIX, no se demostró completamente hasta 1976, utilizando la ayuda de computadoras por Kenneth Appel y Wolfgang Haken \citep{Wilson2008} .
+En las décadas siguientes, la teoría de grafos se ha aplicado a una gama cada vez mayor de problemas en ciencias de la computación, biología, ingeniería de redes, sociología y muchas otras disciplinas. Los modelos generadores de grafos aleatorios, introducidos por Paul Erdős y Alfréd Rényi en los años 1950 y 1960, han permitido a los investigadores estudiar propiedades estadísticas de las redes complejas. Más recientemente, el descubrimiento de las propiedades de los "pequeños mundos" por Duncan Watts y Steven Strogatz, y el estudio de las "redes sin escala" por Albert-László Barabási y Réka Albert, han revolucionado nuestra comprensión de las redes complejas en el mundo real, desde Internet hasta las redes sociales y las redes biológicas \citep{Newman2010, Bollobas2001, Caldarelli2007} .
+Hoy en día, la teoría de grafos sigue siendo un área de investigación vibrante y en expansión, impulsando avances en la matemática pura y aplicada, y ofreciendo nuevas herramientas para abordar problemas complejos en una variedad de campos científicos y de ingeniería \citep{West2000, Gross2004, Castillo2005} .
+
+
+\section{Modelos Generadores de Grafos Aleatorios}
+
+\subsection{Modelo de Erdős-Rényi}
+
+El Modelo de Erdős-Rényi, nombrado así por los matemáticos Paul Erdős y Alfréd Rényi, es uno de los primeros modelos propuestos para la generación de grafos aleatorios y sigue siendo uno de los más estudiados en la teoría de grafos. Este modelo se presenta en dos variantes: $G(n, p)$ y $G(n, M)$ .
+
+En la variante $G(n, p)$, un grafo es generado comenzando con un conjunto de $n$ vértices y conectando cada par de vértices distintos con probabilidad $p$ independientemente de los demás pares. En la variante $G(n, M)$, un grafo es generado comenzando con un conjunto de $n$ vértices y añadiendo exactamente $M$ aristas entre pares de vértices seleccionados al azar sin repetición \citep{Erdos1959} .
+
+\paragraph{Pseudocódigo para el Modelo $G(n, p)$}
+
+A continuación, se proporciona el pseudocódigo para generar un grafo basado en el modelo $G(n, p)$:
+
+\begin{algorithm}
+\caption{Generación de Grafo Aleatorio según el Modelo de Erdős-Rényi $G(n, p)$}
+\begin{algorithmic}[1]
+\State \textbf{Entrada:} Número de vértices $n$, probabilidad $p$
+\State \textbf{Salida:} Grafo $G$ generado según $G(n, p)$
+\Procedure{GenerarGrafoErdosRenyi}{$n, p$}
+    \State Inicializar grafo $G$ con $n$ vértices y sin aristas
+    \For{cada par de vértices $i, j$ en $G$, con $i < j$}
+        \State Generar un número aleatorio $r$ en el intervalo $[0, 1]$
+        \If{$r < p$}
+            \State Añadir arista $(i, j)$ al grafo $G$
+        \EndIf
+    \EndFor
+    \State \textbf{return} $G$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+\subsection{Modelo de Barabási-Albert (Conexión Preferencial)}
+
+El Modelo de Barabási-Albert es conocido por introducir los conceptos de crecimiento y conexión preferencial en la generación de grafos, lo que lleva a la formación de redes libres de escala. Estas redes se caracterizan por una distribución de grado que sigue una ley de potencias, típica de muchas redes en el mundo real, como internet, redes sociales y redes biológicas \citep{Barabasi1999} .
+
+\paragraph{Pseudocódigo para el Modelo de Barabási-Albert}
+
+El siguiente pseudocódigo describe el proceso de generación de un grafo según el Modelo de Barabási-Albert:
+\newpage
+
+\begin{algorithm}
+\caption{Generación de Grafo según el Modelo de Barabási-Albert}
+\begin{algorithmic}[1]
+\State \textbf{Entrada:} Número inicial de vértices $m_0$, número de aristas a añadir por cada nuevo vértice $m (m \leq m_0)$
+\State \textbf{Salida:} Grafo $G$ generado según Barabási-Albert
+\Procedure{GenerarGrafoBarabasiAlbert}{$m_0, m$}
+    \State Inicializar grafo $G$ con $m_0$ vértices conectados de manera arbitraria
+    \For{cada nuevo vértice $v$ a añadir al grafo}
+        \For{cada vértice $u$ ya existente en $G$}
+            \State Calcular la probabilidad $p_u$ de conectar el nuevo vértice $v$ con $u$ basada en el grado de $u$
+            \State Generar un número aleatorio $r$ en el intervalo $[0, 1]$
+            \If{$r < p_u$}
+                \State Añadir arista entre $v$ y $u$
+            \EndIf
+        \EndFor
+    \EndFor
+    \State \textbf{return} $G$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+La probabilidad $p_u$ de conectar el nuevo vértice $v$ con un vértice existente $u$ es proporcional al grado de $u$, lo que refleja el mecanismo de "conexión preferencial" .
+
+\paragraph{Complejidad Algorítmica}
+
+La complejidad algorítmica del modelo de Barabási-Albert depende principalmente de dos factores: el número inicial de vértices $m_0$ y el número de aristas $m$ que se añaden por cada nuevo vértice. Para cada nuevo vértice, el algoritmo debe calcular la probabilidad de conexión para cada vértice existente, lo que implica una operación por cada uno de los vértices existentes en el grafo hasta ese momento. Si $N$ es el número total de vértices en el grafo final, la complejidad algorítmica del proceso de generación del grafo es $O(N \cdot m_0)$ para los pasos iniciales, pero considerando la conexión preferencial y el crecimiento del grafo, puede aproximarse a $O(N^2)$ en escenarios donde $m$ y $m_0$ son comparativamente pequeños frente a $N$. Sin embargo, en la práctica, el proceso es más eficiente que $O(N^2)$ debido a que $m$ suele ser mucho menor que $N$ .
+
+Este modelo es especialmente interesante por su capacidad para generar redes que imitan la estructura de muchas redes complejas observadas en la naturaleza y la sociedad, destacando la importancia de los mecanismos de crecimiento y conexión preferencial en la formación de estas redes .
+\subsection{Modelo de Watts-Strogatz (Mundo Pequeño)}
+
+El Modelo de Watts-Strogatz es fundamental para el estudio de las propiedades de los pequeños mundos en redes. Este modelo parte de un grafo regular en anillo y, mediante un proceso de rewire (reconexión) de aristas con probabilidad $\beta$, introduce atajos que reducen significativamente la distancia promedio entre los vértices, manteniendo al mismo tiempo un alto coeficiente de agrupamiento \citep{Watts1998} .
+
+\paragraph{Pseudocódigo para el Modelo de Watts-Strogatz}
+
+El siguiente pseudocódigo describe cómo generar un grafo basado en el modelo de Watts-Strogatz:
+
+\begin{algorithm}
+\caption{Generación de Grafo según el Modelo de Watts-Strogatz}
+\begin{algorithmic}[1]
+\State \textbf{Entrada:} Número de vértices $n$, número de vecinos $k$, probabilidad de rewire $\beta$
+\State \textbf{Salida:} Grafo $G$ generado según Watts-Strogatz
+\Procedure{GenerarGrafoWattsStrogatz}{$n, k, \beta$}
+    \State Inicializar grafo $G$ formando un anillo con $n$ vértices
+    \For{cada vértice $v$ en $G$}
+        \State Conectar $v$ con sus $k$ vecinos más cercanos (en ambos sentidos)
+    \EndFor
+    \For{cada arista $(u, v)$ en $G$}
+        \State Generar un número aleatorio $r$ en el intervalo $[0, 1]$
+        \If{$r < \beta$}
+            \State Elegir un vértice $w$ al azar que no sea $u$ ni vecino de $u$
+            \State Reconectar la arista $(u, v)$ a $(u, w)$
+        \EndIf
+    \EndFor
+    \State \textbf{return} $G$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+Este proceso de rewire introduce atajos en el grafo, lo que disminuye la longitud promedio de los caminos entre pares de vértices, mientras se conserva un alto grado de agrupamiento local .
+
+\paragraph{Complejidad Algorítmica}
+
+La complejidad algorítmica del modelo de Watts-Strogatz depende de varios pasos. La inicialización del grafo y la conexión de cada vértice con sus $k$ vecinos más cercanos tienen una complejidad de $O(nk)$, que es directa y eficiente. El proceso de rewire de las aristas, sin embargo, requiere revisar cada una de las aristas existentes, que son $O(nk)$ al inicio, y potencialmente buscar en todo el conjunto de vértices para encontrar un vértice $w$ adecuado para el rewire, lo que añade una complejidad adicional .
+
+En el peor de los casos, el proceso de rewire podría considerarse $O(nk \cdot n)$, debido a la necesidad de encontrar un nuevo vértice $w$ para cada arista que se va a reconectar. Sin embargo, en la práctica, el número de rewires efectivamente realizados es dictado por la probabilidad $\beta$, y no todas las aristas serán reconectadas. Por lo tanto, la complejidad práctica es generalmente menor, y la operación de rewire se puede optimizar para evitar la revisión exhaustiva de todos los vértices .
+
+Este modelo demuestra cómo se pueden mantener propiedades clave de las redes reales, como los caminos cortos y un alto coeficiente de agrupamiento, a través de un proceso simple de reconexión de aristas, ofreciendo una herramienta poderosa para el estudio de fenómenos de redes en diversos campos .
+
+\section{Comparación de Modelos}
+La comparación entre los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz revela diferencias fundamentales en su capacidad para modelar diversas características de las redes reales. Esta sección discute los criterios utilizados para comparar estos modelos y destaca algunas de sus limitaciones inherentes .
+
+\subsection{Criterios de Comparación}
+Para evaluar y comparar los modelos generadores de grafos aleatorios, consideramos los siguientes criterios:
+
+\begin{itemize}
+    %\item \textbf{Distribución de Grados:} La distribución de grados en un grafo indica cuántos nodos tienen un cierto número de conexiones (o "grados"). Por ejemplo, si muchos nodos tienen 5 conexiones, decimos que la distribución de grados tiene un pico en 5. Esta distribución nos ayuda a entender cómo están conectados los nodos en un grafo.
+    \item \textbf{Coeficiente de Agrupamiento:} La medida en que los modelos pueden generar grafos con altos niveles de agrupamiento local, simularizando grupos o comunidades dentro de redes .
+    \item \textbf{Longitud de Caminos Promedio:} La efectividad de los modelos para producir redes con caminos cortos entre cualquier par de nodos, característica de los "pequeños mundos" .
+    %\item \textbf{Eficiencia Computacional:} La complejidad algorítmica de los modelos y su viabilidad para generar grandes redes de manera eficiente.
+    \item \textbf{Robustez de la Red:} La robustez de una red se refiere a su capacidad para mantener su conectividad y funcionalidad en presencia de fallos o ataques. La robustez es una característica crucial para muchas redes reales, como las redes de comunicación, redes sociales y redes biológicas, ya que estas redes a menudo deben soportar fallos aleatorios y ataques intencionales.
+
+    Existen dos tipos principales de robustez en las redes:
+    
+    \begin{enumerate}
+        \item Robustez frente a fallos aleatorios: Esto se refiere a la capacidad de la red para mantener su conectividad cuando los nodos son eliminados aleatoriamente. Este tipo de análisis es relevante para situaciones en las que los nodos fallan de manera impredecible, como en las redes de comunicación donde los dispositivos pueden desconectarse inesperadamente.
+        \item Robustez frente a ataques dirigidos: Esto se refiere a la capacidad de la red para mantener su conectividad cuando los nodos más importantes (aquellos con el mayor grado) son eliminados intencionalmente. Este tipo de análisis es relevante para situaciones en las que la red es atacada de manera deliberada, como en los ciberataques que apuntan a deshabilitar nodos críticos en la infraestructura de red.
+    \end{enumerate}
+    La robustez de una red se puede medir de varias maneras, incluyendo el tamaño de la componente conexa más grande después de la eliminación de nodos, la eficiencia de la red y la resiliencia de la red.
+    
+\end{itemize}
+
+\subsection{Limitaciones de los Modelos Actuales}
+
+Cada modelo tiene limitaciones específicas al intentar replicar las complejas características de las redes reales:
+
+\begin{itemize}
+    \item \textbf{Erdős-Rényi:} Aunque es simple y matemáticamente tratable, el modelo de Erdős-Rényi no produce una distribución de grados de ley de potencias y tiene un coeficiente de agrupamiento relativamente bajo, lo que limita su aplicabilidad para modelar redes sociales o biológicas reales .
+    \item \textbf{Barabási-Albert:} Este modelo captura bien la formación de redes libres de escala mediante conexión preferencial. Sin embargo, asume un crecimiento lineal y no considera la evolución de la red ni mecanismos de desconexión, lo que puede ser poco realista para algunas redes dinámicas .
+    \item \textbf{Watts-Strogatz:} Aunque el modelo de Watts-Strogatz introduce con éxito las propiedades de los pequeños mundos, su estructura inicialmente regular no es representativa de muchas redes reales, y la distribución de grados tiende a ser más homogénea que en las redes libres de escala .
+\end{itemize}
+
+Estas limitaciones subrayan la importancia de elegir el modelo apropiado en función de las características específicas de la red que se desea estudiar y sugieren áreas para futuras investigaciones dirigidas a desarrollar modelos más generales y versátiles .
