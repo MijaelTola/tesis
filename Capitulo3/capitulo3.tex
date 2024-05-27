@@ -9,9 +9,9 @@ Esta sección detalla la implementación de modelos de grafos aleatorios desde c
 El modelo Erdős-Rényi \( G(n, p) \) conecta cada par de nodos con una probabilidad \( p \) .
 
 \begin{lstlisting}[language=Python]
-    import random
+import random
     
-    def grafo_erdos_renyi(n, p):
+def grafo_erdos_renyi(n, p):
     G = {i: set() for i in range(n)}
     for i in range(n):
         for j in range(i + 1, n):
