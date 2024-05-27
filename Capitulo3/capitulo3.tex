@@ -219,3 +219,39 @@ def longitud_promedio_camino_corto(G):
     
         return componentes_conexas
 \end{lstlisting}
+
+\subsection{Simulacion y Calculo de Metricas}
+
+\begin{lstlisting}[language=Python]
+    # Simulacion y calculo de metricas
+    n = 100
+    trials = 100
+    num_eliminaciones = 20
+    
+    ccp_er, cpmc_er = [], []
+    ccp_ba, cpmc_ba = [], []
+    ccp_ws, cpmc_ws = [], []
+    
+    robustez_fallos_er, robustez_ataques_er = [], []
+    robustez_fallos_ba, robustez_ataques_ba = [], []
+    robustez_fallos_ws, robustez_ataques_ws = [], []
+    
+    for _ in range(trials):
+        G_er = erdos_renyi_graph(n, 0.1)
+        ccp_er.append(clustering_coefficient(G_er))
+        cpmc_er.append(average_shortest_path_length(G_er))
+        robustez_fallos_er.append(robustez_frente_fallos(G_er.copy(), num_eliminaciones))
+        robustez_ataques_er.append(robustez_frente_ataques(G_er.copy(), num_eliminaciones))
+        
+        G_ba = barabasi_albert_graph(n, 2)
+        ccp_ba.append(clustering_coefficient(G_ba))
+        cpmc_ba.append(average_shortest_path_length(G_ba))
+        robustez_fallos_ba.append(robustez_frente_fallos(G_ba.copy(), num_eliminaciones))
+        robustez_ataques_ba.append(robustez_frente_ataques(G_ba.copy(), num_eliminaciones))
+        
+        G_ws = watts_strogatz_graph(n, 4, 0.1)
+        ccp_ws.append(clustering_coefficient(G_ws))
+        cpmc_ws.append(average_shortest_path_length(G_ws))
+        robustez_fallos_ws.append(robustez_frente_fallos(G_ws.copy(), num_eliminaciones))
+        robustez_ataques_ws.append(robustez_frente_ataques(G_ws.copy(), num_eliminaciones))
+\end{lstlisting}

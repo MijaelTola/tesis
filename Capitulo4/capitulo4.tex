@@ -98,9 +98,6 @@ Probabilidad de Reconexión ($\beta$) & CAP & CPMC \\
 
 En el modelo de Watts-Strogatz, el CAP disminuye con el aumento de $\beta$, lo que refleja la transición de una estructura de mundo pequeño a una estructura aleatoria. Para valores bajos de $\beta$, la red mantiene un alto CAP y un CPMC más grande. Cuando $\beta$ aumenta, los atajos introducidos reducen el CPMC, mejorando la eficiencia de la red sin disminuir demasiado el CAP .
 
-
-
-\newpage
 \subsection{Tabla de Resultados}
 \begin{table}[ht]
 \centering
@@ -242,41 +239,43 @@ A continuación, se presentan los promedios y desviaciones estándar de las mét
     \caption{Estadísticas Descriptivas para CPMC}
     \end{table}
 
+\newpage
 \subsection{Resultados de Robustez}
 
 \subsubsection{Robustez Frente a Fallos Aleatorios}
 
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/er_fallos.png}}
+    \centering{\includegraphics[width=10cm]{images/er_fallos.png}}
     \caption{Robustez frente a fallos en el modelo de Erdős-Rényi}
 \end{figure}
 
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/ba_fallos.png}}
+    \centering{\includegraphics[width=10cm]{images/ba_fallos.png}}
     \caption{Robustez frente a fallos en el modelo de Barabási-Albert}
 \end{figure}
 
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/ws_fallos.png}}
+    \centering{\includegraphics[width=10cm]{images/ws_fallos.png}}
     \caption{Robustez frente a fallos en el modelo de Watts-Strogatz}
 \end{figure}
 
-\newpage
 
+\newpage
 \subsubsection{Robustez Frente a Ataques Dirigidos}
 
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/er_ataques.png}}
+    \centering{\includegraphics[width=10cm]{images/er_ataques.png}}
     \caption{Robustez frente a ataques en el modelo de Erdős-Rényi}
 \end{figure}
 
+\newpage
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/ba_ataques.png}}
+    \centering{\includegraphics[width=10cm]{images/ba_ataques.png}}
     \caption{Robustez frente a ataques en el modelo de Barabási-Albert}
 \end{figure}
 
 \begin{figure}[h]
-    \centering{\includegraphics[width=8cm]{images/ws_ataques.png}}
+    \centering{\includegraphics[width=10cm]{images/ws_ataques.png}}
     \caption{Robustez frente a ataques en el modelo de Watts-Strogatz}
 \end{figure}
   
@@ -291,7 +290,6 @@ H_0: \text{Las medias de las dos muestras son iguales.}
 H_1: \text{Las medias de las dos muestras son diferentes.}
 \]
 
-\newpage
 
 \subsubsection{Pruebas para el Coeficiente de Agrupamiento Promedio (CAP)}
 \begin{table}[ht]
@@ -323,6 +321,7 @@ Barabási-Albert vs Watts-Strogatz & -9.1215 & \textless 0.0001 \\
 \caption{Resultados de las pruebas t para CPMC}
 \end{table}
 
+\newpage
 \subsubsection{Pruebas para Robuztes frente a Fallos Aleatorios (media) y Ataques dirigidos (media) }
 \begin{table}[h!]
     \centering

@@ -31,6 +31,89 @@ Un hito importante en el desarrollo de la teoría de grafos fue el \textit{Teore
 En las décadas siguientes, la teoría de grafos se ha aplicado a una gama cada vez mayor de problemas en ciencias de la computación, biología, ingeniería de redes, sociología y muchas otras disciplinas. Los modelos generadores de grafos aleatorios, introducidos por Paul Erdős y Alfréd Rényi en los años 1950 y 1960, han permitido a los investigadores estudiar propiedades estadísticas de las redes complejas. Más recientemente, el descubrimiento de las propiedades de los "pequeños mundos" por Duncan Watts y Steven Strogatz, y el estudio de las "redes sin escala" por Albert-László Barabási y Réka Albert, han revolucionado nuestra comprensión de las redes complejas en el mundo real, desde Internet hasta las redes sociales y las redes biológicas \citep{Newman2010, Bollobas2001, Caldarelli2007} .
 Hoy en día, la teoría de grafos sigue siendo un área de investigación vibrante y en expansión, impulsando avances en la matemática pura y aplicada, y ofreciendo nuevas herramientas para abordar problemas complejos en una variedad de campos científicos y de ingeniería \citep{West2000, Gross2004, Castillo2005} .
 
+\section{Definiciones Importantes en Teoría de Grafos}
+
+\subsection{Camino Corto}
+
+Un \textbf{camino corto} (shortest path) entre dos nodos en un grafo es el camino que tiene el menor número de aristas. Formalmente, en un grafo \( G = (V, E) \), el camino corto \( P_{uv} \) entre dos nodos \( u \) y \( v \) es el camino tal que la suma de las longitudes de sus aristas es mínima:
+
+\[
+d(u,v) = \min \{ \sum_{i=1}^{k} w(e_i) \mid e_i \in E \}
+\]
+
+donde \( w(e_i) \) es el peso de la arista \( e_i \) y \( d(u,v) \) es la distancia entre los nodos \( u \) y \( v \).
+
+\subsection{Búsqueda en Anchura (BFS)}
+
+La \textbf{búsqueda en anchura} (Breadth-First Search, BFS) es un algoritmo para recorrer o buscar en un grafo. Comienza en el nodo raíz y explora todos los nodos vecinos en cada nivel antes de pasar al siguiente nivel. El algoritmo BFS se puede definir recursivamente como:
+
+\begin{algorithm}
+\caption{BFS}
+\begin{algorithmic}[1]
+\Procedure{BFS}{$G, s$}
+    \State \textbf{Input:} Un grafo \( G = (V, E) \), un nodo inicial \( s \)
+    \State \textbf{Output:} Distancias mínimas desde \( s \) a todos los otros nodos
+    \State \textbf{Inicializar} todas las distancias \( d(v) \) a \(\infty\) y \( d(s) \) a 0
+    \State \textbf{Crear una cola} \( Q \) y \textbf{encolar} \( s \)
+    \While{Q no esté vacía}
+        \State \( u \gets \text{desencolar} \ Q \)
+        \For{cada vecino \( v \) de \( u \)}
+            \If{\( d(v) = \infty \)}
+                \State \( d(v) \gets d(u) + 1 \)
+                \State \text{encolar} \( v \)
+            \EndIf
+        \EndFor
+    \EndWhile
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Ciclos}
+
+Un \textbf{ciclo} en un grafo es una secuencia de aristas que comienza y termina en el mismo nodo, sin repetir ninguna arista. Formalmente, un ciclo en un grafo \( G \) es una sucesión de nodos \( v_1, v_2, \ldots, v_k \) tal que:
+
+\[
+v_1 = v_k \text{ y } \forall i \in \{1, \ldots, k-1\}, (v_i, v_{i+1}) \in E \text{ y } v_i \neq v_j \text{ para } i \neq j
+\]
+
+\subsection{Grafo Completo}
+
+Un \textbf{grafo completo} es un grafo en el que cada par de nodos distintos está conectado por una única arista. Formalmente, un grafo completo \( K_n \) con \( n \) nodos es un grafo tal que:
+
+\[
+E = \{ (u, v) \mid u, v \in V \text{ y } u \neq v \}
+\]
+
+El número total de aristas en un grafo completo es:
+
+\[
+|E| = \frac{n(n-1)}{2}
+\]
+
+\subsection{Subgrafo}
+
+Un \textbf{subgrafo} es un grafo cuyos nodos y aristas son subconjuntos de los nodos y aristas de otro grafo. Formalmente, un grafo \( H = (W, F) \) es un subgrafo de \( G = (V, E) \) si:
+
+\[
+W \subseteq V \text{ y } F \subseteq E
+\]
+
+\subsection{Distancia}
+
+La \textbf{distancia} entre dos nodos \( u \) y \( v \) en un grafo es la longitud del camino más corto entre ellos, denotada como \( d(u,v) \). Para un grafo no ponderado, la distancia es el número de aristas en el camino más corto:
+
+\[
+d(u,v) = \min \{ \text{longitud del camino} \ P_{uv} \mid P_{uv} \text{ es un camino entre } u \text{ y } v \}
+\]
+
+En grafos ponderados, la distancia es la suma de los pesos de las aristas en el camino más corto.
+
+
+\section{Redes de Mundo Pequeño}
+
+Las redes de mundo pequeño son un tipo de estructura de red caracterizada por un alto coeficiente de agrupamiento y una corta longitud promedio del camino más corto. Este concepto fue introducido por Duncan Watts y Steven Strogatz en 1998 \citep{watts1998collective}. Las redes de mundo pequeño combinan propiedades de grafos regulares y aleatorios, y se observan en muchas redes reales, incluyendo redes sociales, redes biológicas y redes de transporte.
+
+
 
 \section{Modelos Generadores de Grafos Aleatorios}
 
@@ -148,10 +231,31 @@ Para evaluar y comparar los modelos generadores de grafos aleatorios, consideram
 
 \begin{itemize}
     %\item \textbf{Distribución de Grados:} La distribución de grados en un grafo indica cuántos nodos tienen un cierto número de conexiones (o "grados"). Por ejemplo, si muchos nodos tienen 5 conexiones, decimos que la distribución de grados tiene un pico en 5. Esta distribución nos ayuda a entender cómo están conectados los nodos en un grafo.
-    \item \textbf{Coeficiente de Agrupamiento:} La medida en que los modelos pueden generar grafos con altos niveles de agrupamiento local, simularizando grupos o comunidades dentro de redes .
-    \item \textbf{Longitud de Caminos Promedio:} La efectividad de los modelos para producir redes con caminos cortos entre cualquier par de nodos, característica de los "pequeños mundos" .
+    \item \textbf{Coeficiente de Agrupamiento:} 
+     mide el grado en que los nodos en un grafo tienden a agruparse. Es una métrica fundamental en el análisis de redes complejas porque refleja la presencia de comunidades o cliques dentro de la red. Matemáticamente, el coeficiente de agrupamiento de un nodo \( v \) se define como:
+
+    \[
+    C_v = \frac{2 \times \text{Número de triángulos que incluyen a } v}{\text{Número de tríos centrados en } v}
+    \]
+    
+    donde un triángulo es un conjunto de tres nodos conectados entre sí, y un trío es un conjunto de tres nodos donde al menos uno de ellos está conectado a los otros dos. Esta métrica es crucial para entender la cohesión local y la estructura comunitaria de la red. Redes sociales, por ejemplo, suelen exhibir altos coeficientes de agrupamiento debido a la tendencia de los individuos a formar grupos cerrados de amigos o conocidos \citep{watts1998collective}.
+    
+    \item \textbf{Longitud de Caminos Promedio:} 
+    
+    La longitud promedio del camino más corto (average shortest path length) es otra métrica vital, que indica la eficiencia de la transmisión de información a través de la red. Es el promedio de la menor distancia (en número de aristas) entre todos los pares de nodos en la red. Matemáticamente, se define como:
+
+    \[
+    L = \frac{1}{N(N-1)} \sum_{i \neq j} d(i,j)
+    \]
+
+    donde \( N \) es el número total de nodos y \( d(i,j) \) es la distancia más corta entre los nodos \( i \) y \( j \). Esta métrica es especialmente importante en redes de comunicación y transporte, donde la rapidez y la eficiencia en la transmisión de datos o movimientos son esenciales. Un valor bajo en esta métrica significa que cualquier nodo puede ser alcanzado desde cualquier otro nodo en un pequeño número de pasos, lo cual es característico de las redes de "pequeño mundo" \citep{watts1998collective}.
+
     %\item \textbf{Eficiencia Computacional:} La complejidad algorítmica de los modelos y su viabilidad para generar grandes redes de manera eficiente.
     \item \textbf{Robustez de la Red:} La robustez de una red se refiere a su capacidad para mantener su conectividad y funcionalidad en presencia de fallos o ataques. La robustez es una característica crucial para muchas redes reales, como las redes de comunicación, redes sociales y redes biológicas, ya que estas redes a menudo deben soportar fallos aleatorios y ataques intencionales.
+    
+    \[
+    R = \frac{\text{Tamaño de la componente conexa más grande tras la eliminación}}{\text{Tamaño original de la red}}
+    \]
 
     Existen dos tipos principales de robustez en las redes:
     
