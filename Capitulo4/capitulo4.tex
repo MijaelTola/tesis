@@ -305,8 +305,6 @@ Barabási-Albert vs Watts-Strogatz & -6.7832 & \textless 0.0001 \\
 \end{tabular}
 \caption{Resultados de las pruebas t para CAP}
 \end{table}
-
-\newpage
 \subsubsection{Pruebas para la Longitud Promedio del Camino Más Corto (CPMC)}
 \begin{table}[ht]
 \centering
@@ -321,7 +319,6 @@ Barabási-Albert vs Watts-Strogatz & -9.1215 & \textless 0.0001 \\
 \end{tabular}
 \caption{Resultados de las pruebas t para CPMC}
 \end{table}
-
 \newpage
 \subsubsection{Pruebas para Robuztes frente a Fallos Aleatorios (media) y Ataques dirigidos (media) }
 \begin{table}[h!]
@@ -357,3 +354,31 @@ Tambien debemos considerar que, los análisis muestran que el modelo de Watts-St
 
 Hay al menos un modelo (Watts-Strogatz) que es más adecuado para simular redes complejas en términos de tener un alto coeficiente de agrupamiento y caminos más cortos, que son propiedades clave de las redes complejas .
 Por lo tanto, la hipótesis se considera demostrada con los datos y análisis realizados .
+
+\subsubsection{Aplicaciones Prácticas de los Resultados Obtenidos}
+
+Los resultados obtenidos pueden ser usados en diversas aplicaciones practicas para mejorar el diseño, eficiencia y capacidad de resistir perturbaciones.
+A continuacion se presenta ejemplos especificos de como podemos aplicar los resultados:
+
+\begin{itemize}
+    \item \textbf{Redes Sociales}\\
+        \textbf{Objetivo}: Mejorar la propagación de información y la cohesión de la red.\\
+        \textbf{Acción Basada en CAP y CPMC}: Utilizar el modelo Watts-Strogatz para simular redes sociales y diseñar algoritmos de recomendación que aumenten el coeficiente de agrupamiento, fomentando la formación de comunidades y facilitando la propagación de información con caminos más cortos.\\
+        \textbf{Ejemplo}: En plataformas como Facebook o LinkedIn, aumentar las recomendaciones de amigos o conexiones que comparten muchos contactos comunes, lo que fomenta la cohesión de grupos y mejora la eficiencia de la comunicación dentro de la red.\\
+    \item \textbf{Redes de Comunicacion}\\
+        \textbf{Objetivo}: Aumentar la robustez frente a fallos y ataques.\\
+        \textbf{Acción Basada en Robustez}: Implementar redundancia en los nodos más conectados según el modelo Barabási-Albert para mejorar la robustez frente a fallos aleatorios y ataques dirigidos.\\
+        \textbf{Ejemplo}: En la infraestructura de internet, instalar servidores de respaldo y mecanismos de failover en los hubs principales para asegurar que la red permanezca operativa incluso si algunos servidores son atacados o fallan.\\
+    \item \textbf{Redes de Transporte}\\
+        \textbf{Objetivo}: Optimizar la eficiencia y la resistencia del sistema de transporte.\\
+        \textbf{Acción Basada en CPMC y Robustez}: Utilizar el modelo Watts-Strogatz para diseñar rutas de transporte público que ofrezcan caminos cortos y eficientes, y que mantengan la conectividad incluso si algunas rutas o estaciones se cierran.\\
+        \textbf{Ejemplo}: En un sistema de metro, diseñar líneas y estaciones de manera que los pasajeros puedan cambiar de línea con un mínimo de transbordos y que haya múltiples rutas alternativas en caso de cierres o mantenimiento.\\
+    \item \textbf{Ciberseguridad}\\
+        \textbf{Objetivo}: Mejorar la seguridad y la protección de infraestructuras críticas.\\
+        \textbf{Acción Basada en Robustez Frente a Ataques}: Identificar y proteger los nodos más críticos en redes basadas en el modelo Barabási-Albert, implementando medidas de seguridad adicionales en estos puntos.\\
+        \textbf{Ejemplo}: En la seguridad de infraestructuras críticas como plantas nucleares o redes de control industrial, reforzar la protección de los componentes más conectados y asegurarse de que la red pueda continuar operando si estos nodos son atacados.\\
+    \item \textbf{Planificacion Urbana}\\
+        \textbf{Objetivo}: Mejorar la eficiencia de las redes de servicios urbanos.\\
+        \textbf{Acción Basada en CPMC y CAP}: Diseñar redes de servicios urbanos como agua y transporte usando el modelo Watts-Strogatz para asegurar caminos cortos y alta agrupación, mejorando la eficiencia y la accesibilidad de los servicios.\\
+        \textbf{Ejemplo}: En la planificación de sistemas de distribución de agua, asegurar múltiples rutas cortas y eficientes para la distribución, lo cual reduce el riesgo de interrupciones y mejora el servicio a los usuarios.\\
+\end{itemize}

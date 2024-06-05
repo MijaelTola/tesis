@@ -61,6 +61,12 @@
 \let \savenumberline \numberline
 \def \numberline#1{\savenumberline{#1.}}
 
+
+\counterwithin{figure}{chapter}
+
+\renewcommand{\cftfigpresnum}{Ilustracion~}
+\setlength{\cftfignumwidth}{7em} 
+
 \pagenumbering{roman}
 
 \title{
@@ -103,7 +109,6 @@
 
 \selectlanguage{spanish}
 
-\newpage
 \thispagestyle{empty}
 \vspace*{\fill} 
 
@@ -127,7 +132,7 @@ este viaje.}
 \textbf{Agradecimientos}\\ 
 \textit{Quiero expresar mi más sincero agradecimiento a...}\\
 A mis padres por apoyarme a lo largo de mi carrera. \\
-A mi asesor M. Sc Jorge Teran Pomier por su apoyo y confianza en el proceso de elaboracion
+A mi tutor M. Sc Jorge Teran Pomier por su apoyo y confianza en el proceso de elaboracion
 de la presente tesis.\\
 Al lector, gracias por darle vida y sentido a este trabajo.
 \end{flushleft}
@@ -138,6 +143,9 @@ Al lector, gracias por darle vida y sentido a este trabajo.
 
 \tableofcontents
 
+\newpage
+\listoffigures
+\newpage
 
 
 \doublespacing

@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'tesis.blg'
-[72] biber-darwin:340> INFO - === Sun May 26, 2024, 20:54:43
-[88] Biber.pm:418> INFO - Reading 'tesis.bcf'
-[193] Biber.pm:972> INFO - Found 11 citekeys in bib section 0
-[207] Biber.pm:4383> INFO - Processing section 0
-[218] Biber.pm:4574> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[384] Utils.pm:409> ERROR - Cannot find 'referencias.bib'!
-[385] Biber.pm:135> INFO - ERRORS: 1
+[67] biber-darwin:340> INFO - === Tue Jun  4, 2024, 23:58:08
+[83] Biber.pm:418> INFO - Reading 'tesis.bcf'
+[185] Biber.pm:972> INFO - Found 11 citekeys in bib section 0
+[200] Biber.pm:4383> INFO - Processing section 0
+[209] Biber.pm:4574> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[355] Utils.pm:409> ERROR - Cannot find 'referencias.bib'!
+[356] Biber.pm:135> INFO - ERRORS: 1

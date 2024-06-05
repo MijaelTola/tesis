@@ -185,7 +185,7 @@ La complejidad algorítmica del modelo de Barabási-Albert depende principalment
 Este modelo es especialmente interesante por su capacidad para generar redes que imitan la estructura de muchas redes complejas observadas en la naturaleza y la sociedad, destacando la importancia de los mecanismos de crecimiento y conexión preferencial en la formación de estas redes .
 \subsection{Modelo de Watts-Strogatz (Mundo Pequeño)}
 
-El Modelo de Watts-Strogatz es fundamental para el estudio de las propiedades de los pequeños mundos en redes. Este modelo parte de un grafo regular en anillo y, mediante un proceso de rewire (reconexión) de aristas con probabilidad $\beta$, introduce atajos que reducen significativamente la distancia promedio entre los vértices, manteniendo al mismo tiempo un alto coeficiente de agrupamiento \citep{Watts1998} .
+El Modelo de Watts-Strogatz es fundamental para el estudio de las propiedades de los pequeños mundos en redes. Este modelo parte de un grafo regular en anillo y, mediante un proceso de reconexion de aristas con probabilidad $\beta$, introduce atajos que reducen significativamente la distancia promedio entre los vértices, manteniendo al mismo tiempo un alto coeficiente de agrupamiento \citep{Watts1998} .
 
 \paragraph{Pseudocódigo para el Modelo de Watts-Strogatz}
 
@@ -194,7 +194,7 @@ El siguiente pseudocódigo describe cómo generar un grafo basado en el modelo d
 \begin{algorithm}
 \caption{Generación de Grafo según el Modelo de Watts-Strogatz}
 \begin{algorithmic}[1]
-\State \textbf{Entrada:} Número de vértices $n$, número de vecinos $k$, probabilidad de rewire $\beta$
+\State \textbf{Entrada:} Número de vértices $n$, número de vecinos $k$, probabilidad de reconexion $\beta$
 \State \textbf{Salida:} Grafo $G$ generado según Watts-Strogatz
 \Procedure{GenerarGrafoWattsStrogatz}{$n, k, \beta$}
     \State Inicializar grafo $G$ formando un anillo con $n$ vértices
@@ -213,13 +213,13 @@ El siguiente pseudocódigo describe cómo generar un grafo basado en el modelo d
 \end{algorithmic}
 \end{algorithm}
 
-Este proceso de rewire introduce atajos en el grafo, lo que disminuye la longitud promedio de los caminos entre pares de vértices, mientras se conserva un alto grado de agrupamiento local .
+Este proceso de reconexion introduce atajos en el grafo, lo que disminuye la longitud promedio de los caminos entre pares de vértices, mientras se conserva un alto grado de agrupamiento local .
 
 \paragraph{Complejidad Algorítmica}
 
-La complejidad algorítmica del modelo de Watts-Strogatz depende de varios pasos. La inicialización del grafo y la conexión de cada vértice con sus $k$ vecinos más cercanos tienen una complejidad de $O(nk)$, que es directa y eficiente. El proceso de rewire de las aristas, sin embargo, requiere revisar cada una de las aristas existentes, que son $O(nk)$ al inicio, y potencialmente buscar en todo el conjunto de vértices para encontrar un vértice $w$ adecuado para el rewire, lo que añade una complejidad adicional .
+La complejidad algorítmica del modelo de Watts-Strogatz depende de varios pasos. La inicialización del grafo y la conexión de cada vértice con sus $k$ vecinos más cercanos tienen una complejidad de $O(nk)$, que es directa y eficiente. El proceso de reconexion de las aristas, sin embargo, requiere revisar cada una de las aristas existentes, que son $O(nk)$ al inicio, y potencialmente buscar en todo el conjunto de vértices para encontrar un vértice $w$ adecuado para el reconexion, lo que añade una complejidad adicional .
 
-En el peor de los casos, el proceso de rewire podría considerarse $O(nk \cdot n)$, debido a la necesidad de encontrar un nuevo vértice $w$ para cada arista que se va a reconectar. Sin embargo, en la práctica, el número de rewires efectivamente realizados es dictado por la probabilidad $\beta$, y no todas las aristas serán reconectadas. Por lo tanto, la complejidad práctica es generalmente menor, y la operación de rewire se puede optimizar para evitar la revisión exhaustiva de todos los vértices .
+En el peor de los casos, el proceso de reconexion podría considerarse $O(nk \cdot n)$, debido a la necesidad de encontrar un nuevo vértice $w$ para cada arista que se va a reconectar. Sin embargo, en la práctica, el número de reconexiones efectivamente realizados es dictado por la probabilidad $\beta$, y no todas las aristas serán reconectadas. Por lo tanto, la complejidad práctica es generalmente menor, y la operación de reconexion se puede optimizar para evitar la revisión exhaustiva de todos los vértices .
 
 Este modelo demuestra cómo se pueden mantener propiedades clave de las redes reales, como los caminos cortos y un alto coeficiente de agrupamiento, a través de un proceso simple de reconexión de aristas, ofreciendo una herramienta poderosa para el estudio de fenómenos de redes en diversos campos .
 
@@ -278,3 +278,28 @@ Cada modelo tiene limitaciones específicas al intentar replicar las complejas c
 \end{itemize}
 
 Estas limitaciones subrayan la importancia de elegir el modelo apropiado en función de las características específicas de la red que se desea estudiar y sugieren áreas para futuras investigaciones dirigidas a desarrollar modelos más generales y versátiles .
+
+\section{Red Compleja}
+
+Una \textbf{red compleja} es una estructura formada por nodos interconectados mediante aristas, que exhibe propiedades no triviales y patrones de conexión que no son aleatorios ni regulares. Las redes complejas se encuentran en diversas áreas, como la biología, la sociología, la informática y la física, y se caracterizan por propiedades tales como agrupamiento, caminos cortos y distribución de grado heterogénea \citep{newman2010networks}.
+
+\subsection{Características de las Redes Complejas}
+
+Las redes complejas tienen varias características distintivas que las diferencian de las redes simples:
+
+\begin{itemize}
+    \item \textbf{Agrupamiento}: En una red compleja, los nodos tienden a formar grupos o comunidades altamente interconectados, donde la probabilidad de que dos nodos vecinos de un nodo dado estén conectados entre sí es alta. Esta propiedad se mide mediante el coeficiente de agrupamiento \cite{watts1998}.
+    \item \textbf{Caminos Cortos}: A pesar de su tamaño, las redes complejas suelen tener una pequeña distancia promedio entre cualquier par de nodos. Esta característica se conoce como la propiedad de "pequeño mundo" y se mide mediante la longitud promedio del camino más corto \cite{watts1998}.
+    \item \textbf{Distribución de Grado Heterogénea}: En las redes complejas, la distribución del número de conexiones (grado) de los nodos sigue una ley de potencias, lo que significa que unos pocos nodos tienen un grado muy alto (hubs), mientras que la mayoría de los nodos tienen un grado bajo \cite{barabasi1999}.
+\end{itemize}
+
+\subsection{Ejemplos de Redes Complejas}
+
+Las redes complejas están presentes en diversos sistemas naturales y artificiales. Algunos ejemplos incluyen:
+
+\begin{itemize}
+    \item \textbf{Redes Sociales}: Donde los nodos representan personas y las aristas representan relaciones de amistad o interacción \citep{wasserman1994}.
+    \item \textbf{Redes Biológicas}: Como las redes de interacción proteína-proteína, donde los nodos son proteínas y las aristas representan interacciones bioquímicas \citep{albert2005}.
+    \item \textbf{Redes de Transporte}: Donde los nodos son estaciones o aeropuertos y las aristas son rutas de transporte o vuelos \citep{guimera2005}.
+    \item \textbf{Redes de Comunicación}: Como Internet, donde los nodos son routers o servidores y las aristas representan conexiones de datos \citep{pastor2004}.
+\end{itemize}
