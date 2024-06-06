@@ -2819,7 +2819,7 @@
     <bcf:citekey order="18">Watts1998</bcf:citekey>
     <bcf:citekey order="19">watts1998collective</bcf:citekey>
     <bcf:citekey order="20">watts1998collective</bcf:citekey>
-    <bcf:citekey order="21">newman2010networks</bcf:citekey>
+    <bcf:citekey order="21">Newman2010</bcf:citekey>
     <bcf:citekey order="22">watts1998</bcf:citekey>
     <bcf:citekey order="23">watts1998</bcf:citekey>
     <bcf:citekey order="24">barabasi1999</bcf:citekey>
@@ -2840,13 +2840,12 @@
     <bcf:citekey order="39">Gross2004</bcf:citekey>
     <bcf:citekey order="40">Castillo2005</bcf:citekey>
     <bcf:citekey order="41">watts1998collective</bcf:citekey>
-    <bcf:citekey order="42">newman2010networks</bcf:citekey>
-    <bcf:citekey order="43">watts1998</bcf:citekey>
-    <bcf:citekey order="44">barabasi1999</bcf:citekey>
-    <bcf:citekey order="45">wasserman1994</bcf:citekey>
-    <bcf:citekey order="46">albert2005</bcf:citekey>
-    <bcf:citekey order="47">guimera2005</bcf:citekey>
-    <bcf:citekey order="48">pastor2004</bcf:citekey>
+    <bcf:citekey order="42">watts1998</bcf:citekey>
+    <bcf:citekey order="43">barabasi1999</bcf:citekey>
+    <bcf:citekey order="44">wasserman1994</bcf:citekey>
+    <bcf:citekey order="45">albert2005</bcf:citekey>
+    <bcf:citekey order="46">guimera2005</bcf:citekey>
+    <bcf:citekey order="47">pastor2004</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

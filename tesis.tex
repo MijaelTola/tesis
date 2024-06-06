@@ -67,6 +67,10 @@
 \renewcommand{\cftfigpresnum}{Ilustracion~}
 \setlength{\cftfignumwidth}{7em} 
 
+\renewcommand{\cfttabpresnum}{Tabla~}
+\setlength{\cfttabnumwidth}{5em} 
+
+
 \pagenumbering{roman}
 
 \title{
@@ -103,6 +107,8 @@
 \author{}
 \date{}
 
+\let\oldmaketitle\maketitle
+\renewcommand{\maketitle}{\oldmaketitle\thispagestyle{empty}\newpage\setcounter{page}{1}}
 \begin{document}
 
 \maketitle
@@ -137,14 +143,22 @@ de la presente tesis.\\
 Al lector, gracias por darle vida y sentido a este trabajo.
 \end{flushleft}
 
-\vspace*{\fill} % 
+\vspace{\fill}
+\begin{flushright}
+  mija.tola.ap@gmail.com
+\end{flushright}
+
+%\vspace*{\fill} % 
 
 \newpage
 
+\include{Resumen/resumen.tex}
+\singlespacing
 \tableofcontents
-
 \newpage
 \listoffigures
+\newpage
+\listoftables
 \newpage
 
 

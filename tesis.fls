@@ -577,6 +577,9 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
 INPUT ./tesis.aux
 INPUT tesis.aux
 INPUT tesis.aux
+INPUT ./Resumen/resumen.aux
+INPUT Resumen/resumen.aux
+INPUT Resumen/resumen.aux
 INPUT ./Capitulo1/capitulo1.aux
 INPUT Capitulo1/capitulo1.aux
 INPUT Capitulo1/capitulo1.aux
@@ -687,6 +690,15 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT ./Resumen/resumen.tex
+OUTPUT Resumen/resumen.aux
+INPUT ./Resumen/resumen.tex
+INPUT ./Resumen/resumen.tex
+INPUT ./Resumen/resumen.tex
+INPUT ./Resumen/resumen.tex
+INPUT Resumen/resumen.tex
+INPUT ./Resumen/resumen.tex
+INPUT Resumen/resumen.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./tesis.toc
@@ -714,6 +726,10 @@ INPUT ./tesis.lof
 INPUT tesis.lof
 INPUT tesis.lof
 OUTPUT tesis.lof
+INPUT ./tesis.lot
+INPUT tesis.lot
+INPUT tesis.lot
+OUTPUT tesis.lot
 INPUT ./Capitulo1/capitulo1.tex
 OUTPUT Capitulo1/capitulo1.aux
 INPUT ./Capitulo1/capitulo1.tex
@@ -876,6 +892,9 @@ INPUT Bibliografia/bibliografia.tex
 INPUT ./Bibliografia/bibliografia.tex
 INPUT Bibliografia/bibliografia.tex
 INPUT tesis.aux
+INPUT ./Resumen/resumen.aux
+INPUT Resumen/resumen.aux
+INPUT Resumen/resumen.aux
 INPUT ./Capitulo1/capitulo1.aux
 INPUT Capitulo1/capitulo1.aux
 INPUT Capitulo1/capitulo1.aux
