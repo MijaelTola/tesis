@@ -45,6 +45,7 @@ Probabilidad ($p$) & CAP & CPMC \\
 
 En el modelo de Erdős-Rényi, observamos que el coeficiente de Agrupamiento promedio (CAP) es aproximadamente igual a la probabilidad $p$. Esto indica que la densidad de triángulos en el grafo es proporcional a la probabilidad de conexión entre los nodos. A medida que $p$ aumenta, la red se vuelve más conectada, lo que reduce la longitud promedio del camino más corto (CPMC) .
 
+\newpage
 \subsection{Barabási-Albert}
 
 \begin{table}[h!]
@@ -151,7 +152,12 @@ Watts-Strogatz    & 0.60        & 2.1          & 0.004 s                     \\ 
 
 \subsection{Demostracion de Hipotesis}
 En el presente trabajo postula en el acápite 1.4:\\
-\textit{''Entre los modelos generadores de grafos aleatorios estudiados, existe al menos uno que, bajo un conjunto definido de criterios de evaluación como la precisión en la representación de las propiedades estructurales de las redes complejas, eficiencia computacional y aplicabilidad en diversos contextos, demuestra ser significativamente más adecuado para simular redes complejas que los demás modelos."}.
+\textit{''
+Entre los modelos generadores de grafos aleatorios estudiados, existe al menos uno que,
+bajo un conjunto definido de criterios de evaluación como la precisión en la representación de las propiedades 
+estructurales de las redes complejas, eficiencia computacional y aplicabilidad en diversos contextos, demuestra ser 
+el mejor para simular redes complejas.
+"}.
 Para la demostracion de la Hipotesis se usaron los siguientes parametros:
 \begin{itemize}
     \item Número de nodos: 100
@@ -259,7 +265,6 @@ A continuación, se presentan los promedios y desviaciones estándar de las mét
     \caption{Robustez frente a fallos en el modelo de Watts-Strogatz}
 \end{figure}
 
-
 \newpage
 \subsubsection{Robustez Frente a Ataques Dirigidos}
 
@@ -268,12 +273,12 @@ A continuación, se presentan los promedios y desviaciones estándar de las mét
     \caption{Robustez frente a ataques en el modelo de Erdős-Rényi}
 \end{figure}
 
-\newpage
 \begin{figure}[h]
     \centering{\includegraphics[width=10cm]{images/ba_ataques.png}}
     \caption{Robustez frente a ataques en el modelo de Barabási-Albert}
 \end{figure}
 
+\newpage
 \begin{figure}[h]
     \centering{\includegraphics[width=10cm]{images/ws_ataques.png}}
     \caption{Robustez frente a ataques en el modelo de Watts-Strogatz}
@@ -305,6 +310,7 @@ Barabási-Albert vs Watts-Strogatz & -6.7832 & \textless 0.0001 \\
 \end{tabular}
 \caption{Resultados de las pruebas t para CAP}
 \end{table}
+
 \subsubsection{Pruebas para la Longitud Promedio del Camino Más Corto (CPMC)}
 \begin{table}[ht]
 \centering
@@ -319,6 +325,7 @@ Barabási-Albert vs Watts-Strogatz & -9.1215 & \textless 0.0001 \\
 \end{tabular}
 \caption{Resultados de las pruebas t para CPMC}
 \end{table}
+
 \newpage
 \subsubsection{Pruebas para Robuztes frente a Fallos Aleatorios (media) y Ataques dirigidos (media) }
 \begin{table}[h!]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.21)  6 JUN 2024 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.21)  14 JUN 2024 07:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,16 +596,29 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count440
 \@lastruleclass=\count441
 \@thisrulewidth=\dimen190
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip115
+\f@nch@O@elh=\skip116
+\f@nch@O@erh=\skip117
+\f@nch@O@olh=\skip118
+\f@nch@O@orh=\skip119
+\f@nch@O@elf=\skip120
+\f@nch@O@erf=\skip121
+\f@nch@O@olf=\skip122
+\f@nch@O@orf=\skip123
 )
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+\c@ttlp@side=\count442
+\ttlp@side=\count443
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count442
-\@quotereset=\count443
+\@quotelevel=\count444
+\@quotereset=\count445
 (./tesis.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -614,20 +627,20 @@ LaTeX Info: Redefining \% on input line 11.
  (./Resumen/resumen.aux) (./Capitulo1/capitulo1.aux) (./Capitulo2/capitulo2.aux) (./Capitulo3/capitulo3.aux) (./Capitulo4/capitulo4.aux) (./Capitulo5/capitulo5.aux) (./Bibliografia/bibliografia.aux))
 \openout1 = `tesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -665,16 +678,16 @@ LaTeX Font Info:    ... okay on input line 112.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
+\scratchcounter=\count446
 \scratchdimen=\dimen191
 \scratchbox=\box60
-\nofMPsegments=\count445
-\nofMParguments=\count446
+\nofMPsegments=\count447
+\nofMParguments=\count448
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count447
+\MPscratchCnt=\count449
 \MPscratchDim=\dimen192
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
 \everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -726,38 +739,36 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'tesis.bbl' found.
  (./tesis.bbl)
-Package biblatex Info: Reference section=0 on input line 112.
-Package biblatex Info: Reference segment=0 on input line 112.
-\c@lstlisting=\count450
+Package biblatex Info: Reference section=0 on input line 98.
+Package biblatex Info: Reference segment=0 on input line 98.
+\c@lstlisting=\count452
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 <umsa.png, id=1, 122.6181pt x 246.6816pt>
 File: umsa.png Graphic file (type png)
 <use umsa.png>
-Package pdftex.def Info: umsa.png  used on input line 114.
+Package pdftex.def Info: umsa.png  used on input line 106.
 (pdftex.def)             Requested size: 142.27261pt x 313.01112pt.
  [1
 
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 114.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 114.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./umsa.png>] [3]
-LaTeX Info: Redefining \sptext on input line 116.
-LaTeX Info: Redefining \. on input line 116.
-LaTeX Info: Redefining \% on input line 116.
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./umsa.png>]
+LaTeX Info: Redefining \sptext on input line 120.
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
  [1] [2]
 \openout2 = `Resumen/resumen.aux'.
 
- (./Resumen/resumen.tex [3
+ (./Resumen/resumen.tex
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 2.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 2.
+
+[3
 
 
 ]
@@ -774,17 +785,27 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \sptext on input line 3.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
- [5
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [5
 
 
-])
+]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [6]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [7])
 \tf@toc=\write4
 \openout4 = `tesis.toc'.
 
-LaTeX Info: Redefining \sptext on input line 158.
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
- [6] (./tesis.lof
+ [8] (./tesis.lof
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -795,7 +816,7 @@ LaTeX Info: Redefining \% on input line 3.
 \tf@lof=\write5
 \openout5 = `tesis.lof'.
 
- [7] (./tesis.lot
+ [9] (./tesis.lot
 LaTeX Info: Redefining \sptext on input line 1.
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -806,7 +827,7 @@ LaTeX Info: Redefining \% on input line 3.
 \tf@lot=\write6
 \openout6 = `tesis.lot'.
 
- [8]
+ [10]
 \openout2 = `Capitulo1/capitulo1.aux'.
 
  (./Capitulo1/capitulo1.tex
@@ -818,35 +839,29 @@ LaTeX Warning: Citation 'Newman2010' on page 1 undefined on input line 6.
 LaTeX Warning: Citation 'Erdos1959' on page 1 undefined on input line 11.
 
 
-Underfull \vbox (badness 4132) has occurred while \output is active []
+LaTeX Warning: Citation 'Barabasi1999' on page 1 undefined on input line 13.
+
+
+Underfull \vbox (badness 3977) has occurred while \output is active []
 
  [1
 
 
 ]
 
-LaTeX Warning: Citation 'Barabasi1999' on page 2 undefined on input line 13.
-
-
 LaTeX Warning: Citation 'Watts1998' on page 2 undefined on input line 15.
 
 
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
-LaTeX Info: Redefining \sptext on input line 20.
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
  [2]
 
 LaTeX Warning: Citation 'Erdos1959' on page 3 undefined on input line 29.
 
-LaTeX Info: Redefining \sptext on input line 34.
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+
+LaTeX Warning: Citation 'Erdos1959' on page 3 undefined on input line 38.
+
 [3]
-
-LaTeX Warning: Citation 'Erdos1959' on page 4 undefined on input line 38.
-
 
 LaTeX Warning: Citation 'Barabasi1999' on page 4 undefined on input line 44.
 
@@ -858,471 +873,311 @@ Overfull \hbox (6.11423pt too wide) in paragraph at lines 46--51
 \OT1/cmr/m/n/12 chas re-des del mun-do real, des-de la red el^^Sectri-ca has-ta las re-des neu-ro-na-les ([]). 
  []
 
-LaTeX Info: Redefining \sptext on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-[4]
 
-LaTeX Warning: Citation 'Wilson2008' on page 5 undefined on input line 57.
+LaTeX Warning: Citation 'Wilson2008' on page 4 undefined on input line 57.
 
 
-LaTeX Warning: Citation 'Bollobas2001' on page 5 undefined on input line 57.
+LaTeX Warning: Citation 'Bollobas2001' on page 4 undefined on input line 57.
 
 
-LaTeX Warning: Citation 'Caldarelli2007' on page 5 undefined on input line 57.
+LaTeX Warning: Citation 'Caldarelli2007' on page 4 undefined on input line 57.
 
-LaTeX Info: Redefining \sptext on input line 70.
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
-[5]
-LaTeX Info: Redefining \sptext on input line 85.
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [6]
-Underfull \vbox (badness 2205) has occurred while \output is active []
-
-LaTeX Info: Redefining \sptext on input line 102.
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
- [7]
-LaTeX Info: Redefining \sptext on input line 126.
-LaTeX Info: Redefining \. on input line 126.
-LaTeX Info: Redefining \% on input line 126.
- [8])
-LaTeX Info: Redefining \sptext on input line 168.
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
- [9]
+[4] [5] [6] [7]) [8]
 \openout2 = `Capitulo2/capitulo2.aux'.
 
  (./Capitulo2/capitulo2.tex
 Cap\'{\i }tulo 2.
-[10
+[9
 
 
 
 
 ]
 
-LaTeX Warning: Citation 'West2000' on page 11 undefined on input line 24.
+LaTeX Warning: Citation 'West2000' on page 10 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Gross2004' on page 11 undefined on input line 24.
+LaTeX Warning: Citation 'Gross2004' on page 10 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Castillo2005' on page 11 undefined on input line 24.
+LaTeX Warning: Citation 'Castillo2005' on page 10 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Wilson2008' on page 11 undefined on input line 28.
+LaTeX Warning: Citation 'Wilson2008' on page 10 undefined on input line 28.
 
 
-LaTeX Warning: Citation 'Wilson2008' on page 11 undefined on input line 30.
+LaTeX Warning: Citation 'Wilson2008' on page 10 undefined on input line 30.
 
 
-LaTeX Warning: Citation 'Newman2010' on page 11 undefined on input line 31.
+LaTeX Warning: Citation 'Newman2010' on page 10 undefined on input line 31.
 
 
-LaTeX Warning: Citation 'Bollobas2001' on page 11 undefined on input line 31.
+LaTeX Warning: Citation 'Bollobas2001' on page 10 undefined on input line 31.
 
 
-LaTeX Warning: Citation 'Caldarelli2007' on page 11 undefined on input line 31.
+LaTeX Warning: Citation 'Caldarelli2007' on page 10 undefined on input line 31.
 
 
-LaTeX Warning: Citation 'West2000' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'West2000' on page 10 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'Gross2004' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'Gross2004' on page 10 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'Castillo2005' on page 11 undefined on input line 32.
+LaTeX Warning: Citation 'Castillo2005' on page 10 undefined on input line 32.
 
-LaTeX Info: Redefining \sptext on input line 33.
-LaTeX Info: Redefining \. on input line 33.
-LaTeX Info: Redefining \% on input line 33.
-[11]
+[10]
+Underfull \vbox (badness 2393) has occurred while \output is active []
+
+ [11] [12]
+
+LaTeX Warning: Citation 'watts1998collective' on page 13 undefined on input line 114.
+
+[13]
+
+LaTeX Warning: Citation 'Erdos1959' on page 14 undefined on input line 124.
+
+
+LaTeX Warning: Citation 'Barabasi1999' on page 14 undefined on input line 151.
+
+[14] [15]
+
+LaTeX Warning: Citation 'Watts1998' on page 16 undefined on input line 187.
+
+[16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \sptext on input line 39.
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
- [12]
-LaTeX Info: Redefining \sptext on input line 74.
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
- [13]
-LaTeX Info: Redefining \sptext on input line 105.
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
- [14]
-
-LaTeX Warning: Citation 'watts1998collective' on page 15 undefined on input line 114.
-
-
-LaTeX Warning: Citation 'Erdos1959' on page 15 undefined on input line 124.
-
-LaTeX Info: Redefining \sptext on input line 146.
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
-[15]
-
-LaTeX Warning: Citation 'Barabasi1999' on page 16 undefined on input line 151.
-
-LaTeX Info: Redefining \sptext on input line 156.
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
-[16]
-LaTeX Info: Redefining \sptext on input line 186.
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
  [17]
 
-LaTeX Warning: Citation 'Watts1998' on page 18 undefined on input line 188.
+LaTeX Warning: Citation 'watts1998collective' on page 18 undefined on input line 240.
 
-LaTeX Info: Redefining \sptext on input line 221.
-LaTeX Info: Redefining \. on input line 221.
-LaTeX Info: Redefining \% on input line 221.
 [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \sptext on input line 234.
-LaTeX Info: Redefining \. on input line 234.
-LaTeX Info: Redefining \% on input line 234.
- [19]
+LaTeX Warning: Citation 'watts1998collective' on page 19 undefined on input line 250.
 
-LaTeX Warning: Citation 'watts1998collective' on page 20 undefined on input line 241.
+[19]
 
+LaTeX Warning: Citation 'Newman2010' on page 20 undefined on input line 283.
 
-LaTeX Warning: Citation 'watts1998collective' on page 20 undefined on input line 251.
-
-LaTeX Info: Redefining \sptext on input line 252.
-LaTeX Info: Redefining \. on input line 252.
-LaTeX Info: Redefining \% on input line 252.
 [20]
-LaTeX Info: Redefining \sptext on input line 268.
-LaTeX Info: Redefining \. on input line 268.
-LaTeX Info: Redefining \% on input line 268.
+
+LaTeX Warning: Citation 'watts1998' on page 21 undefined on input line 290.
+
+
+LaTeX Warning: Citation 'watts1998' on page 21 undefined on input line 291.
+
+
+LaTeX Warning: Citation 'barabasi1999' on page 21 undefined on input line 292.
+
+
+Underfull \vbox (badness 2809) has occurred while \output is active []
+
  [21]
 
-LaTeX Warning: Citation 'Newman2010' on page 22 undefined on input line 284.
-
-LaTeX Info: Redefining \sptext on input line 285.
-LaTeX Info: Redefining \. on input line 285.
-LaTeX Info: Redefining \% on input line 285.
-[22]
-
-LaTeX Warning: Citation 'watts1998' on page 23 undefined on input line 291.
+LaTeX Warning: Citation 'wasserman1994' on page 22 undefined on input line 300.
 
 
-LaTeX Warning: Citation 'watts1998' on page 23 undefined on input line 292.
+LaTeX Warning: Citation 'albert2005' on page 22 undefined on input line 301.
 
 
-LaTeX Warning: Citation 'barabasi1999' on page 23 undefined on input line 293.
+LaTeX Warning: Citation 'guimera2005' on page 22 undefined on input line 302.
 
 
-LaTeX Warning: Citation 'wasserman1994' on page 23 undefined on input line 301.
+LaTeX Warning: Citation 'pastor2004' on page 22 undefined on input line 303.
 
-
-LaTeX Warning: Citation 'albert2005' on page 23 undefined on input line 302.
-
-LaTeX Info: Redefining \sptext on input line 303.
-LaTeX Info: Redefining \. on input line 303.
-LaTeX Info: Redefining \% on input line 303.
-[23]
-
-LaTeX Warning: Citation 'guimera2005' on page 24 undefined on input line 303.
-
-
-LaTeX Warning: Citation 'pastor2004' on page 24 undefined on input line 304.
-
-)
-LaTeX Info: Redefining \sptext on input line 169.
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
- [24]
+) [22]
 \openout2 = `Capitulo3/capitulo3.aux'.
 
  (./Capitulo3/capitulo3.tex
 Cap\'{\i }tulo 3.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [25
-
-
-
-
-]
-<images/er1.png, id=135, 354.32375pt x 307.1475pt>
+)
+<images/er1.png, id=123, 354.32375pt x 307.1475pt>
 File: images/er1.png Graphic file (type png)
 <use images/er1.png>
-Package pdftex.def Info: images/er1.png  used on input line 26.
+Package pdftex.def Info: images/er1.png  used on input line 25.
 (pdftex.def)             Requested size: 142.26764pt x 142.26439pt.
-<images/er2.png, id=136, 333.245pt x 300.12125pt>
+<images/er2.png, id=124, 333.245pt x 300.12125pt>
 File: images/er2.png Graphic file (type png)
 <use images/er2.png>
-Package pdftex.def Info: images/er2.png  used on input line 31.
+Package pdftex.def Info: images/er2.png  used on input line 30.
 (pdftex.def)             Requested size: 142.2654pt x 142.26598pt.
 
 
-LaTeX Warning: Citation 'Barabasi1999' on page 26 undefined on input line 37.
+LaTeX Warning: Citation 'Barabasi1999' on page 23 undefined on input line 36.
 
-LaTeX Info: Redefining \sptext on input line 48.
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
-[26 <./images/er1.png> <./images/er2.png>]
-<images/ba1.png, id=143, 338.26375pt x 294.09875pt>
+[23
+
+
+
+
+ <./images/er1.png>] [24 <./images/er2.png>]
+<images/ba1.png, id=135, 338.26375pt x 294.09875pt>
 File: images/ba1.png Graphic file (type png)
 <use images/ba1.png>
-Package pdftex.def Info: images/ba1.png  used on input line 69.
+Package pdftex.def Info: images/ba1.png  used on input line 68.
 (pdftex.def)             Requested size: 142.26593pt x 142.26524pt.
-LaTeX Info: Redefining \sptext on input line 72.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
- [27 <./images/ba1.png>]
-<images/ba2.png, id=148, 313.17pt x 287.0725pt>
+ [25 <./images/ba1.png>]
+<images/ba2.png, id=140, 313.17pt x 287.0725pt>
 File: images/ba2.png Graphic file (type png)
 <use images/ba2.png>
-Package pdftex.def Info: images/ba2.png  used on input line 75.
+Package pdftex.def Info: images/ba2.png  used on input line 74.
 (pdftex.def)             Requested size: 142.26797pt x 142.26558pt.
 
 
-LaTeX Warning: Citation 'Watts1998' on page 28 undefined on input line 82.
+LaTeX Warning: Citation 'Watts1998' on page 26 undefined on input line 81.
 
-LaTeX Info: Redefining \sptext on input line 102.
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
-[28 <./images/ba2.png>]
-<images/ws1.png, id=153, 306.14375pt x 294.09875pt>
+[26 <./images/ba2.png>]
+<images/ws1.png, id=146, 306.14375pt x 294.09875pt>
 File: images/ws1.png Graphic file (type png)
 <use images/ws1.png>
-Package pdftex.def Info: images/ws1.png  used on input line 106.
+Package pdftex.def Info: images/ws1.png  used on input line 105.
 (pdftex.def)             Requested size: 142.26193pt x 142.26524pt.
-<images/ws2.png, id=154, 315.1775pt x 281.05pt>
+<images/ws2.png, id=147, 315.1775pt x 281.05pt>
 File: images/ws2.png Graphic file (type png)
 <use images/ws2.png>
-Package pdftex.def Info: images/ws2.png  used on input line 111.
+Package pdftex.def Info: images/ws2.png  used on input line 110.
 (pdftex.def)             Requested size: 142.26138pt x 142.26147pt.
-LaTeX Info: Redefining \sptext on input line 123.
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
- [29 <./images/ws1.png> <./images/ws2.png>]
-LaTeX Info: Redefining \sptext on input line 157.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
- [30]
-LaTeX Info: Redefining \sptext on input line 189.
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
- [31]
+ [27 <./images/ws1.png> <./images/ws2.png>] [28] [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \sptext on input line 220.
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
- [32]
-LaTeX Info: Redefining \sptext on input line 250.
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
- [33])
-LaTeX Info: Redefining \sptext on input line 170.
-LaTeX Info: Redefining \. on input line 170.
-LaTeX Info: Redefining \% on input line 170.
- [34]
+ [30] [31]) [32]
 \openout2 = `Capitulo4/capitulo4.aux'.
 
  (./Capitulo4/capitulo4.tex
 Cap\'{\i }tulo 4.
-
-Underfull \vbox (badness 5231) has occurred while \output is active []
-
- [35
+[33
 
 
 
 
-]
-LaTeX Info: Redefining \sptext on input line 70.
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
- [36]
-LaTeX Info: Redefining \sptext on input line 100.
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
- [37]
-LaTeX Info: Redefining \sptext on input line 137.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
- [38]
-LaTeX Info: Redefining \sptext on input line 156.
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
- [39]
-<images/CCP_er.png, id=193, 578.16pt x 289.08pt>
+] [34] [35]
+Underfull \vbox (badness 1038) has occurred while \output is active []
+
+ [36] [37]
+<images/CCP_er.png, id=184, 578.16pt x 289.08pt>
 File: images/CCP_er.png Graphic file (type png)
 <use images/CCP_er.png>
-Package pdftex.def Info: images/CCP_er.png  used on input line 172.
+Package pdftex.def Info: images/CCP_er.png  used on input line 178.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-<images/CCP_ba.png, id=194, 578.16pt x 289.08pt>
+<images/CCP_ba.png, id=185, 578.16pt x 289.08pt>
 File: images/CCP_ba.png Graphic file (type png)
 <use images/CCP_ba.png>
-Package pdftex.def Info: images/CCP_ba.png  used on input line 177.
+Package pdftex.def Info: images/CCP_ba.png  used on input line 183.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-<images/CCP_ws.png, id=195, 578.16pt x 289.08pt>
+<images/CCP_ws.png, id=186, 578.16pt x 289.08pt>
 File: images/CCP_ws.png Graphic file (type png)
 <use images/CCP_ws.png>
-Package pdftex.def Info: images/CCP_ws.png  used on input line 182.
+Package pdftex.def Info: images/CCP_ws.png  used on input line 188.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-<images/cpmc_er.png, id=196, 578.16pt x 289.08pt>
+<images/cpmc_er.png, id=187, 578.16pt x 289.08pt>
 File: images/cpmc_er.png Graphic file (type png)
 <use images/cpmc_er.png>
-Package pdftex.def Info: images/cpmc_er.png  used on input line 210.
+Package pdftex.def Info: images/cpmc_er.png  used on input line 216.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-<images/cpmc_ba.png, id=197, 578.16pt x 289.08pt>
+<images/cpmc_ba.png, id=188, 578.16pt x 289.08pt>
 File: images/cpmc_ba.png Graphic file (type png)
 <use images/cpmc_ba.png>
-Package pdftex.def Info: images/cpmc_ba.png  used on input line 215.
+Package pdftex.def Info: images/cpmc_ba.png  used on input line 221.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-<images/cpmc_ws.png, id=198, 578.16pt x 289.08pt>
+<images/cpmc_ws.png, id=189, 578.16pt x 289.08pt>
 File: images/cpmc_ws.png Graphic file (type png)
 <use images/cpmc_ws.png>
-Package pdftex.def Info: images/cpmc_ws.png  used on input line 220.
+Package pdftex.def Info: images/cpmc_ws.png  used on input line 226.
 (pdftex.def)             Requested size: 150.32504pt x 75.15901pt.
-LaTeX Info: Redefining \sptext on input line 227.
-LaTeX Info: Redefining \. on input line 227.
-LaTeX Info: Redefining \% on input line 227.
- [40 <./images/CCP_er.png> <./images/CCP_ba.png> <./images/CCP_ws.png>]
-LaTeX Info: Redefining \sptext on input line 242.
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
- [41 <./images/cpmc_er.png> <./images/cpmc_ba.png> <./images/cpmc_ws.png>]
-<images/er_fallos.png, id=211, 462.528pt x 346.896pt>
+ [38 <./images/CCP_er.png> <./images/CCP_ba.png> <./images/CCP_ws.png>] [39 <./images/cpmc_er.png> <./images/cpmc_ba.png> <./images/cpmc_ws.png>]
+<images/er_fallos.png, id=204, 462.528pt x 346.896pt>
 File: images/er_fallos.png Graphic file (type png)
 <use images/er_fallos.png>
-Package pdftex.def Info: images/er_fallos.png  used on input line 248.
+Package pdftex.def Info: images/er_fallos.png  used on input line 254.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
-<images/ba_fallos.png, id=212, 462.528pt x 346.896pt>
+<images/ba_fallos.png, id=205, 462.528pt x 346.896pt>
 File: images/ba_fallos.png Graphic file (type png)
 <use images/ba_fallos.png>
-Package pdftex.def Info: images/ba_fallos.png  used on input line 253.
+Package pdftex.def Info: images/ba_fallos.png  used on input line 259.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
-<images/ws_fallos.png, id=213, 462.528pt x 346.896pt>
+<images/ws_fallos.png, id=206, 462.528pt x 346.896pt>
 File: images/ws_fallos.png Graphic file (type png)
 <use images/ws_fallos.png>
-Package pdftex.def Info: images/ws_fallos.png  used on input line 258.
+Package pdftex.def Info: images/ws_fallos.png  used on input line 264.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \sptext on input line 263.
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
-[42 <./images/er_fallos.png> <./images/ba_fallos.png>]
-<images/er_ataques.png, id=219, 462.528pt x 346.896pt>
+[40 <./images/er_fallos.png> <./images/ba_fallos.png>]
+<images/er_ataques.png, id=212, 462.528pt x 346.896pt>
 File: images/er_ataques.png Graphic file (type png)
 <use images/er_ataques.png>
-Package pdftex.def Info: images/er_ataques.png  used on input line 267.
+Package pdftex.def Info: images/er_ataques.png  used on input line 272.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
-LaTeX Info: Redefining \sptext on input line 271.
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
- [43 <./images/ws_fallos.png> <./images/er_ataques.png>]
-<images/ba_ataques.png, id=225, 462.528pt x 346.896pt>
+<images/ba_ataques.png, id=213, 462.528pt x 346.896pt>
 File: images/ba_ataques.png Graphic file (type png)
 <use images/ba_ataques.png>
-Package pdftex.def Info: images/ba_ataques.png  used on input line 273.
+Package pdftex.def Info: images/ba_ataques.png  used on input line 277.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
-<images/ws_ataques.png, id=226, 462.528pt x 346.896pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41 <./images/ws_fallos.png> <./images/er_ataques.png>]
+<images/ws_ataques.png, id=219, 462.528pt x 346.896pt>
 File: images/ws_ataques.png Graphic file (type png)
 <use images/ws_ataques.png>
-Package pdftex.def Info: images/ws_ataques.png  used on input line 278.
+Package pdftex.def Info: images/ws_ataques.png  used on input line 283.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
-LaTeX Info: Redefining \sptext on input line 282.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
- [44 <./images/ba_ataques.png> <./images/ws_ataques.png>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 302.
+ [42 <./images/ba_ataques.png> <./images/ws_ataques.png>]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 307.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 302.
-LaTeX Info: Redefining \sptext on input line 322.
-LaTeX Info: Redefining \. on input line 322.
-LaTeX Info: Redefining \% on input line 322.
- [45]
-LaTeX Info: Redefining \sptext on input line 352.
-LaTeX Info: Redefining \. on input line 352.
-LaTeX Info: Redefining \% on input line 352.
- [46]
-Underfull \hbox (badness 10000) in paragraph at lines 364--368
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 307.
+ [43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 371--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
+Underfull \hbox (badness 10000) in paragraph at lines 375--379
 
  []
 
-LaTeX Info: Redefining \sptext on input line 372.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 372--376
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 379--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--380
+Underfull \hbox (badness 10000) in paragraph at lines 383--387
 
  []
 
-LaTeX Info: Redefining \sptext on input line 380.
-LaTeX Info: Redefining \. on input line 380.
-LaTeX Info: Redefining \% on input line 380.
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 380--384
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 387--391
 
  []
 
-)
-LaTeX Info: Redefining \sptext on input line 171.
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
- [49]
+) [47]
 \openout2 = `Capitulo5/capitulo5.aux'.
 
  (./Capitulo5/capitulo5.tex
 Cap\'{\i }tulo 5.
-[50
+[48
 
 
 
 
-]
-LaTeX Info: Redefining \sptext on input line 35.
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
- [51]
-LaTeX Info: Redefining \sptext on input line 48.
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
- [52])
-LaTeX Info: Redefining \sptext on input line 172.
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [53]
+] [49]) [50]
 \openout2 = `Bibliografia/bibliografia.aux'.
 
- (./Bibliografia/bibliografia.tex [54
+ (./Bibliografia/bibliografia.tex [51
 
 
 
 
-])
-LaTeX Info: Redefining \sptext on input line 173.
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
- [55] (./tesis.aux
+]) [52] (./tesis.aux
 LaTeX Info: Redefining \sptext on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1330,6 +1185,10 @@ LaTeX Info: Redefining \sptext on input line 11.
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
  (./Resumen/resumen.aux) (./Capitulo1/capitulo1.aux) (./Capitulo2/capitulo2.aux) (./Capitulo3/capitulo3.aux) (./Capitulo4/capitulo4.aux) (./Capitulo5/capitulo5.aux) (./Bibliografia/bibliografia.aux))
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
 
 LaTeX Warning: There were undefined references.
 
@@ -1343,18 +1202,18 @@ Package logreq Info: Writing requests to 'tesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18003 strings out of 478268
- 325794 string characters out of 5846347
- 1427232 words of memory out of 5000000
- 35918 multiletter control sequences out of 15000+600000
- 481862 words of font info for 76 fonts, out of 8000000 for 9000
+ 18176 strings out of 478268
+ 328307 string characters out of 5846347
+ 1403656 words of memory out of 5000000
+ 36086 multiletter control sequences out of 15000+600000
+ 479051 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,9n,77p,1051b,5039s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on tesis.pdf (66 pages, 1254636 bytes).
+ 67i,12n,77p,1051b,5039s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on tesis.pdf (63 pages, 1236461 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

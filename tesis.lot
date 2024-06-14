@@ -5,14 +5,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Resultados del Modelo de Erdős-Rényi\relax }}{36}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Resultados del Modelo de Barabási-Albert\relax }}{37}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Resultados del Modelo de Watts-Strogatz\relax }}{37}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Resultados Consolidados de los Modelos\relax }}{38}{}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Tamaño de la Componente Conexa Más Grande Después de Eliminaciones\relax }}{38}{}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Estadísticas Descriptivas para CAP\relax }}{41}{}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Estadísticas Descriptivas para CPMC\relax }}{41}{}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Resultados de las pruebas t para CAP\relax }}{45}{}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Resultados de las pruebas t para CPMC\relax }}{45}{}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Resultados de las pruebas t para la robustez de la red\relax }}{46}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Resultados del Modelo de Erdős-Rényi\relax }}{34}{}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Resultados del Modelo de Barabási-Albert\relax }}{35}{}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Resultados del Modelo de Watts-Strogatz\relax }}{35}{}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Resultados Consolidados de los Modelos\relax }}{36}{}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Tamaño de la Componente Conexa Más Grande Después de Eliminaciones\relax }}{36}{}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Estadísticas Descriptivas para CAP\relax }}{39}{}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Estadísticas Descriptivas para CPMC\relax }}{39}{}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Resultados de las pruebas t para CAP\relax }}{43}{}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Resultados de las pruebas t para CPMC\relax }}{43}{}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Resultados de las pruebas t para la robustez de la red\relax }}{44}{}%
 \addvspace {10\p@ }

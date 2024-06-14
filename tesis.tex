@@ -1,9 +1,7 @@
 \documentclass[12pt, openany]{book} 
 \usepackage[utf8]{inputenc}
 \usepackage[letterpaper, margin=1in]{geometry}
-
 \usepackage[spanish,english]{babel}
-
 \usepackage{graphicx}
 \usepackage{titlesec}
 \usepackage{tocloft}%
@@ -11,26 +9,22 @@
 \usepackage{algpseudocode}
 \usepackage[backend=biber, style=apa, natbib=true]{biblatex}
 \usepackage{setspace}
-
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{subcaption}
-
-
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{fancyhdr}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-%\definecolor{backcolour}{rgb}{0.15, 0.15, 0.15}
-%\definecolor{codewhite}{rgb}{0.9, 0.9, 0.9}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
@@ -52,7 +46,6 @@
 }
 \lstset{style=mystyle}
 
-
 \addbibresource{referencias.bib} 
 \defbibheading{bibnumbered}{\section{Fuentes de Información}}
 
@@ -60,7 +53,6 @@
 \selectlanguage{spanish}
 \let \savenumberline \numberline
 \def \numberline#1{\savenumberline{#1.}}
-
 
 \counterwithin{figure}{chapter}
 
@@ -70,52 +62,65 @@
 \renewcommand{\cfttabpresnum}{Tabla~}
 \setlength{\cfttabnumwidth}{5em} 
 
+\renewcommand{\cfttoctitlefont}{\fontsize{14}{16}\selectfont\bfseries}
+\renewcommand{\cftloftitlefont}{\fontsize{14}{16}\selectfont\bfseries}
+\renewcommand{\cftlottitlefont}{\fontsize{14}{16}\selectfont\bfseries}
 
-\pagenumbering{roman}
-
-\title{
-    \textbf{
-      \Large{UNIVERSIDAD MAYOR DE SAN ANDR\'ES}\\
-      \normalsize{
-        FACULTAD DE CIENCIAS PURAS Y NATURALES\\
-        CARRERA DE INFORM\'ATICA\\
-      }
-      \hfill \break
-      \includegraphics[width=5cm,height=11cm]{umsa}
-      \break
-      \begin{large}
-        EVALUACION COMPARATIVA DE MODELOS GENERADORES DE GRAFOS ALEATORIOS PARA REDES COMPLEJAS
-      \end{large}
-      \break
-      \small{
-        Tesis de Grado para obtener el Título de Licenciatura en Informática \break
-        Mención Ingeniería de Sistemas Informáticos\break
-      }
-      \break
-      \large {
-        POR: CARLOS MIJAEL TOLA APAZA\\
-        TUTOR: M.Sc. JORGE TERAN
-      }
-      \break
-      \small {
-        LA PAZ - BOLIVIA \break
-        Abril, 2024
-      }
-    }
-}
+\title{}
 
 \author{}
 \date{}
 
 \let\oldmaketitle\maketitle
 \renewcommand{\maketitle}{\oldmaketitle\thispagestyle{empty}\newpage\setcounter{page}{1}}
+
+\titleformat{\chapter}[block]
+  {\normalfont\fontsize{14}{20}\selectfont\bfseries}{Capítulo \thechapter.}{0.5em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\fontsize{14}{15}\selectfont\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{15}\selectfont\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{name=\chapter,numberless}[block]
+  {\normalfont\fontsize{16}{20}\selectfont\bfseries\centering}{}{0pt}{}
+
+\setstretch{1.0}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt} 
+\fancyfoot[C]{\thepage} 
+
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+  \centering
+  \textbf{\Large{UNIVERSIDAD MAYOR DE SAN ANDR\'ES}}\\
+  \textbf{\normalsize{FACULTAD DE CIENCIAS PURAS Y NATURALES}}\\
+  \textbf{\normalsize{CARRERA DE INFORM\'ATICA}}\\
+  \vspace{1cm}
+  \includegraphics[width=5cm,height=11cm]{umsa}\\
+  \vspace{1cm}
+  \textbf{\large{EVALUACION COMPARATIVA DE MODELOS GENERADORES DE GRAFOS ALEATORIOS PARA REDES COMPLEJAS}}\\
+  \textbf{\small{Tesis de Grado para obtener el Título de Licenciatura en Informática}}\\
+  \textbf{\small{Mención Ingeniería de Sistemas Informáticos}}\\
+  \vspace{1cm}
+  \textbf{\large{POR: CARLOS MIJAEL TOLA APAZA}}\\
+  \textbf{\large{TUTOR: M.Sc. JORGE TERAN}}\\
+  \vfill
+  \textbf{\small{LA PAZ - BOLIVIA}}\\
+  \textbf{\small{Junio, 2024}}\\
+\end{titlepage}
 
+\pagenumbering{roman}
 \selectlanguage{spanish}
 
-\thispagestyle{empty}
+\newpage
+\thispagestyle{plain} % Para que tenga paginación
 \vspace*{\fill} 
 
 \begin{flushright}
@@ -129,9 +134,7 @@ este viaje.}
 
 \vspace{2cm} 
 \newpage
-
-\thispagestyle{empty} 
-
+\thispagestyle{plain} % Para que tenga paginación
 \vspace*{\fill} 
 
 \begin{flushleft}
@@ -141,19 +144,18 @@ A mis padres por apoyarme a lo largo de mi carrera. \\
 A mi tutor M. Sc Jorge Teran Pomier por su apoyo y confianza en el proceso de elaboracion
 de la presente tesis.\\
 Al lector, gracias por darle vida y sentido a este trabajo.
+\vspace{2cm}
+\begin{flushright}
+\textit{mija.tola.ap@gmail.com}
+\end{flushright}
 \end{flushleft}
 
-\vspace{\fill}
-\begin{flushright}
-  mija.tola.ap@gmail.com
-\end{flushright}
-
-%\vspace*{\fill} % 
+\vspace{\fill} % 
 
 \newpage
 
 \include{Resumen/resumen.tex}
-\singlespacing
+\doublespacing
 \tableofcontents
 \newpage
 \listoffigures
@@ -161,8 +163,6 @@ Al lector, gracias por darle vida y sentido a este trabajo.
 \listoftables
 \newpage
 
-
-\doublespacing
 \pagenumbering{arabic}
 
 \include{Capitulo1/capitulo1.tex}

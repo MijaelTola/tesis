@@ -4,35 +4,42 @@ Este estudio comparó tres modelos generadores de grafos aleatorios: Erdős-Rén
 
 \section{Cumplimiento de Objetivos}
 
-\subsection*{Objetivo General}
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item \textbf{Describir los modelos generadores de grafos aleatorios más utilizados:} Los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz fueron descritos, incluyendo sus fundamentos teóricos y mecanismos de formación de grafos.
+    \item \textbf{Implementar una serie de experimentos para comparar los modelos:} Se realizaron pruebas estadísticas que mostraron diferencias significativas entre los modelos, con Watts-Strogatz mostrando las características más deseables para redes complejas.
+    \item \textbf{Analizar la aplicabilidad de cada modelo en contextos específicos:} Se demostró que Watts-Strogatz es superior para simular redes tipo 'pequeño mundo', mientras que Barabási-Albert es útil para redes con nodos altamente conectados.
+\end{itemize}
+
+\subsection{Objetivo General}
 
 El objetivo general de comparar distintos modelos generadores de grafos aleatorios para identificar sus fortalezas, debilidades y aplicaciones óptimas fue alcanzado:
 
 \begin{itemize}
-    \item Se describieron detalladamente los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz .
-    \item Se implementaron experimentos que compararon los modelos en términos de CAP y CPMC .
-    \item Se analizó la aplicabilidad de cada modelo, destacando que el modelo Watts-Strogatz es especialmente apto para representar redes complejas debido a su alto nivel de agrupamiento y caminos cortos .
+    \item Se describieron detalladamente los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz.
+    \item Se implementaron experimentos que compararon los modelos en términos de CAP y CPMC.
+    \item Se analizó la aplicabilidad de cada modelo, destacando que el modelo Watts-Strogatz es especialmente apto para representar redes complejas debido a su alto nivel de agrupamiento y caminos cortos.
 \end{itemize}
 
-\subsection*{Objetivos Específicos}
 
-\begin{itemize}
-    \item \textbf{Describir los modelos generadores de grafos aleatorios más utilizados:} Los modelos de Erdős-Rényi, Barabási-Albert y Watts-Strogatz fueron descritos, incluyendo sus fundamentos teóricos y mecanismos de formación de grafos .
-    \item \textbf{Implementar una serie de experimentos para comparar los modelos:} Se realizaron pruebas estadísticas que mostraron diferencias significativas entre los modelos, con Watts-Strogatz mostrando las características más deseables para redes complejas .
-    \item \textbf{Analizar la aplicabilidad de cada modelo en contextos específicos:} Se demostró que Watts-Strogatz es superior para simular redes tipo 'pequeño mundo', mientras que Barabási-Albert es útil para redes con nodos altamente conectados .
-\end{itemize}
 
-\subsection*{Demostración de la Hipótesis}
+\subsection{Demostración de la Hipótesis}
 
 La hipótesis planteada fue demostrada efectivamente a través de los resultados obtenidos:
 
-\textit{``Entre los modelos generadores de grafos aleatorios estudiados, existe al menos uno que, bajo un conjunto definido de criterios de evaluación como la precisión en la representación de las propiedades estructurales de las redes complejas, eficiencia computacional y aplicabilidad en diversos contextos, demuestra ser significativamente más adecuado para simular redes complejas que los demás modelos.''}
+\textit{``
+Entre los modelos generadores de grafos aleatorios estudiados, existe al menos uno que,
+bajo un conjunto definido de criterios de evaluación como la precisión en la representación de las propiedades 
+estructurales de las redes complejas, eficiencia computacional y aplicabilidad en diversos contextos, demuestra ser 
+el mejor para simular redes complejas.
+''}
 
 El modelo de Watts-Strogatz demostró ser el más adecuado para simular redes complejas, cumpliendo con los criterios de evaluación mencionados:
 \begin{itemize}
-    \item \textbf{Precisión en la representación de propiedades estructurales:} Watts-Strogatz tuvo un alto CAP y bajo CPMC, indicando un fuerte agrupamiento y cortos caminos característicos .
-    \item \textbf{Eficiencia computacional:} Todos los modelos se evaluaron bajo condiciones similares, mostrando que la eficiencia de Watts-Strogatz es comparable a la de los otros modelos, especialmente en redes de tamaño moderado .
-    \item \textbf{Aplicabilidad en diversos contextos:} Este modelo es ideal para estudiar redes sociales, biológicas y otras redes complejas donde las propiedades de 'pequeño mundo' son prominentes .
+    \item \textbf{Precisión en la representación de propiedades estructurales:} Watts-Strogatz tuvo un alto CAP y bajo CPMC, indicando un fuerte agrupamiento y cortos caminos característicos.
+    \item \textbf{Eficiencia computacional:} Todos los modelos se evaluaron bajo condiciones similares, mostrando que la eficiencia de Watts-Strogatz es comparable a la de los otros modelos, especialmente en redes de tamaño moderado.
+    \item \textbf{Aplicabilidad en diversos contextos:} Este modelo es ideal para estudiar redes sociales, biológicas y otras redes complejas donde las propiedades de 'pequeño mundo' son prominentes.
     \item \textbf{Robuztes:} El análisis de la robustez ha demostrado que cada modelo de grafo aleatorio tiene sus propias ventajas y desventajas. Los resultados de las pruebas estadísticas confirman que las diferencias observadas en las métricas de robustez son significativas. Esta información es valiosa para investigadores y profesionales que buscan diseñar redes que sean robustas frente a diferentes tipos de perturbaciones.
 \end{itemize}
 

@@ -5,90 +5,93 @@
 \contentsline {section}{\numberline {1.1}Introducción}{1}{}%
 \contentsline {section}{\numberline {1.2}Problema}{3}{}%
 \contentsline {subsection}{\numberline {1.2.1}Antecedentes}{3}{}%
-\contentsline {subsection}{\numberline {1.2.2}Planteamiento del Problema}{5}{}%
+\contentsline {subsection}{\numberline {1.2.2}Planteamiento del Problema}{4}{}%
 \contentsline {subsection}{\numberline {1.2.3}Formulacion del problema}{5}{}%
 \contentsline {section}{\numberline {1.3}Objetivos}{5}{}%
 \contentsline {subsection}{\numberline {1.3.1}Objetivo General}{5}{}%
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{6}{}%
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Específicos}{5}{}%
 \contentsline {section}{\numberline {1.4}Hipótesis}{6}{}%
 \contentsline {section}{\numberline {1.5}Justificación}{6}{}%
 \contentsline {subsection}{\numberline {1.5.1}Justificación Económica}{6}{}%
 \contentsline {subsection}{\numberline {1.5.2}Justificación Social}{6}{}%
-\contentsline {subsection}{\numberline {1.5.3}Justificación Científica}{7}{}%
-\contentsline {section}{\numberline {1.6}Alcances}{7}{}%
+\contentsline {subsection}{\numberline {1.5.3}Justificación Científica}{6}{}%
+\contentsline {section}{\numberline {1.6}Alcances}{6}{}%
 \contentsline {section}{\numberline {1.7}Metodología}{7}{}%
 \contentsline {subsection}{\numberline {1.7.1}Selección de Modelos}{7}{}%
-\contentsline {subsection}{\numberline {1.7.2}Criterios de Evaluación}{8}{}%
-\contentsline {subsection}{\numberline {1.7.3}Recopilación y Análisis de Datos}{8}{}%
+\contentsline {subsection}{\numberline {1.7.2}Criterios de Evaluación}{7}{}%
+\contentsline {subsection}{\numberline {1.7.3}Recopilación y Análisis de Datos}{7}{}%
 \contentsline {subsection}{\numberline {1.7.4}Herramientas de Software}{8}{}%
 \contentsline {subsection}{\numberline {1.7.5}Evaluación y Comparación de Modelos}{8}{}%
-\contentsline {subsection}{\numberline {1.7.6}Limitaciones Metodológicas}{9}{}%
-\contentsline {chapter}{\numberline {2}Marco Teórico}{10}{}%
-\contentsline {section}{\numberline {2.1}Introducción a la Teoría de Grafos}{10}{}%
-\contentsline {subsection}{\numberline {2.1.1}Definición y Conceptos Básicos}{10}{}%
-\contentsline {section}{\numberline {2.2}Historia y Desarrollo}{11}{}%
-\contentsline {section}{\numberline {2.3}Definiciones Importantes en Teoría de Grafos}{13}{}%
-\contentsline {subsection}{\numberline {2.3.1}Camino Corto}{13}{}%
-\contentsline {subsection}{\numberline {2.3.2}Búsqueda en Anchura (BFS)}{13}{}%
-\contentsline {subsection}{\numberline {2.3.3}Ciclos}{14}{}%
-\contentsline {subsection}{\numberline {2.3.4}Grafo Completo}{14}{}%
-\contentsline {subsection}{\numberline {2.3.5}Subgrafo}{14}{}%
-\contentsline {subsection}{\numberline {2.3.6}Distancia}{14}{}%
-\contentsline {section}{\numberline {2.4}Redes de Mundo Pequeño}{15}{}%
-\contentsline {section}{\numberline {2.5}Modelos Generadores de Grafos Aleatorios}{15}{}%
-\contentsline {subsection}{\numberline {2.5.1}Modelo de Erdős-Rényi}{15}{}%
-\contentsline {paragraph}{Pseudocódigo para el Modelo $G(n, p)$}{16}{}%
-\contentsline {subsection}{\numberline {2.5.2}Modelo de Barabási-Albert (Conexión Preferencial)}{16}{}%
-\contentsline {paragraph}{Pseudocódigo para el Modelo de Barabási-Albert}{16}{}%
-\contentsline {paragraph}{Complejidad Algorítmica}{17}{}%
-\contentsline {subsection}{\numberline {2.5.3}Modelo de Watts-Strogatz (Mundo Pequeño)}{18}{}%
-\contentsline {paragraph}{Pseudocódigo para el Modelo de Watts-Strogatz}{18}{}%
-\contentsline {paragraph}{Complejidad Algorítmica}{19}{}%
-\contentsline {section}{\numberline {2.6}Comparación de Modelos}{19}{}%
-\contentsline {subsection}{\numberline {2.6.1}Criterios de Comparación}{20}{}%
-\contentsline {subsection}{\numberline {2.6.2}Limitaciones de los Modelos Actuales}{22}{}%
-\contentsline {section}{\numberline {2.7}Red Compleja}{22}{}%
-\contentsline {subsection}{\numberline {2.7.1}Características de las Redes Complejas}{23}{}%
-\contentsline {subsection}{\numberline {2.7.2}Ejemplos de Redes Complejas}{23}{}%
-\contentsline {chapter}{\numberline {3}Marco Aplicativo}{25}{}%
-\contentsline {section}{\numberline {3.1}Implementación de Modelos de Grafos Aleatorios}{25}{}%
-\contentsline {subsection}{\numberline {3.1.1}Modelo Erdős-Rényi}{25}{}%
-\contentsline {subsection}{\numberline {3.1.2}Modelo Barabási-Albert}{26}{}%
-\contentsline {subsection}{\numberline {3.1.3}Modelo Watts-Strogatz}{28}{}%
-\contentsline {section}{\numberline {3.2}Implementación de Funciones}{29}{}%
-\contentsline {subsection}{\numberline {3.2.1}Algoritmo coeficiente de agrupamiento}{29}{}%
-\contentsline {subsection}{\numberline {3.2.2}Algoritmo para calcular Longitud de Caminos Promedio}{30}{}%
-\contentsline {subsection}{\numberline {3.2.3}Algoritmo para calcular la Robustez}{31}{}%
-\contentsline {subsection}{\numberline {3.2.4}Simulacion y Calculo de Metricas}{33}{}%
-\contentsline {chapter}{\numberline {4}Evaluación de Resultados}{35}{}%
-\contentsline {section}{\numberline {4.1}Recoleccion de datos}{35}{}%
-\contentsline {subsection}{\numberline {4.1.1}Erdős-Rényi}{35}{}%
-\contentsline {subsection}{\numberline {4.1.2}Barabási-Albert}{35}{}%
-\contentsline {subsection}{\numberline {4.1.3}Watts-Strogatz}{36}{}%
-\contentsline {subsection}{\numberline {4.1.4}Robustez de los Grafos}{36}{}%
-\contentsline {section}{\numberline {4.2}Analisis y Resultados de datos}{36}{}%
-\contentsline {subsection}{\numberline {4.2.1}Erdős-Rényi}{36}{}%
-\contentsline {subsection}{\numberline {4.2.2}Barabási-Albert}{37}{}%
-\contentsline {subsection}{\numberline {4.2.3}Watts-Strogatz}{37}{}%
-\contentsline {subsection}{\numberline {4.2.4}Tabla de Resultados}{38}{}%
-\contentsline {subsubsection}{Precisión en la Representación}{38}{}%
-\contentsline {subsubsection}{Eficiencia Computacional}{39}{}%
-\contentsline {subsubsection}{Aplicabilidad}{39}{}%
-\contentsline {subsubsection}{Robustez}{39}{}%
-\contentsline {subsection}{\numberline {4.2.5}Demostracion de Hipotesis}{39}{}%
-\contentsline {subsection}{\numberline {4.2.6}Datos Recolectados}{40}{}%
-\contentsline {subsubsection}{Coeficiente de Agrupamiento Promedio (CAP)}{40}{}%
-\contentsline {subsubsection}{Longitud Promedio del Camino Más Corto (CPMC)}{40}{}%
-\contentsline {subsection}{\numberline {4.2.7}Resultados de Robustez}{42}{}%
-\contentsline {subsubsection}{Robustez Frente a Fallos Aleatorios}{42}{}%
-\contentsline {subsubsection}{Robustez Frente a Ataques Dirigidos}{43}{}%
-\contentsline {subsection}{\numberline {4.2.8}Pruebas Estadísticas}{45}{}%
-\contentsline {subsubsection}{Pruebas para el Coeficiente de Agrupamiento Promedio (CAP)}{45}{}%
-\contentsline {subsubsection}{Pruebas para la Longitud Promedio del Camino Más Corto (CPMC)}{45}{}%
-\contentsline {subsubsection}{Pruebas para Robuztes frente a Fallos Aleatorios (media) y Ataques dirigidos (media) }{46}{}%
-\contentsline {subsection}{\numberline {4.2.9}Análisis de Resultados}{46}{}%
-\contentsline {subsubsection}{Aplicaciones Prácticas de los Resultados Obtenidos}{47}{}%
-\contentsline {chapter}{\numberline {5}Conclusiones y recomendaciones}{50}{}%
-\contentsline {section}{\numberline {5.1}Cumplimiento de Objetivos}{50}{}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{52}{}%
-\contentsline {chapter}{Bibliografia}{54}{}%
+\contentsline {subsection}{\numberline {1.7.6}Limitaciones Metodológicas}{8}{}%
+\contentsline {chapter}{\numberline {2}Marco Teórico}{9}{}%
+\contentsline {section}{\numberline {2.1}Introducción a la Teoría de Grafos}{9}{}%
+\contentsline {subsection}{\numberline {2.1.1}Definición y Conceptos Básicos}{9}{}%
+\contentsline {section}{\numberline {2.2}Historia y Desarrollo}{10}{}%
+\contentsline {section}{\numberline {2.3}Definiciones Importantes en Teoría de Grafos}{11}{}%
+\contentsline {subsection}{\numberline {2.3.1}Camino Corto}{11}{}%
+\contentsline {subsection}{\numberline {2.3.2}Búsqueda en Anchura (BFS)}{12}{}%
+\contentsline {subsection}{\numberline {2.3.3}Ciclos}{12}{}%
+\contentsline {subsection}{\numberline {2.3.4}Grafo Completo}{12}{}%
+\contentsline {subsection}{\numberline {2.3.5}Subgrafo}{13}{}%
+\contentsline {subsection}{\numberline {2.3.6}Distancia}{13}{}%
+\contentsline {section}{\numberline {2.4}Redes de Mundo Pequeño}{13}{}%
+\contentsline {section}{\numberline {2.5}Modelos Generadores de Grafos Aleatorios}{14}{}%
+\contentsline {subsection}{\numberline {2.5.1}Modelo de Erdős-Rényi}{14}{}%
+\contentsline {paragraph}{Pseudocódigo para el Modelo $G(n, p)$}{14}{}%
+\contentsline {subsection}{\numberline {2.5.2}Modelo de Barabási-Albert (Conexión Preferencial)}{15}{}%
+\contentsline {paragraph}{Pseudocódigo para el Modelo de Barabási-Albert}{15}{}%
+\contentsline {paragraph}{Complejidad Algorítmica}{15}{}%
+\contentsline {subsection}{\numberline {2.5.3}Modelo de Watts-Strogatz (Mundo Pequeño)}{16}{}%
+\contentsline {paragraph}{Pseudocódigo para el Modelo de Watts-Strogatz}{16}{}%
+\contentsline {paragraph}{Complejidad Algorítmica}{16}{}%
+\contentsline {section}{\numberline {2.6}Comparación de Modelos}{18}{}%
+\contentsline {subsection}{\numberline {2.6.1}Criterios de Comparación}{18}{}%
+\contentsline {subsection}{\numberline {2.6.2}Limitaciones de los Modelos Actuales}{20}{}%
+\contentsline {section}{\numberline {2.7}Red Compleja}{21}{}%
+\contentsline {subsection}{\numberline {2.7.1}Características de las Redes Complejas}{21}{}%
+\contentsline {subsection}{\numberline {2.7.2}Ejemplos de Redes Complejas}{22}{}%
+\contentsline {chapter}{\numberline {3}Marco Aplicativo}{23}{}%
+\contentsline {section}{\numberline {3.1}Implementación de Modelos de Grafos Aleatorios}{23}{}%
+\contentsline {subsection}{\numberline {3.1.1}Modelo Erdős-Rényi}{23}{}%
+\contentsline {subsection}{\numberline {3.1.2}Modelo Barabási-Albert}{24}{}%
+\contentsline {subsection}{\numberline {3.1.3}Modelo Watts-Strogatz}{26}{}%
+\contentsline {section}{\numberline {3.2}Implementación de Funciones}{28}{}%
+\contentsline {subsection}{\numberline {3.2.1}Algoritmo coeficiente de agrupamiento}{28}{}%
+\contentsline {subsection}{\numberline {3.2.2}Algoritmo para calcular Longitud de Caminos Promedio}{28}{}%
+\contentsline {subsection}{\numberline {3.2.3}Algoritmo para calcular la Robustez}{29}{}%
+\contentsline {subsection}{\numberline {3.2.4}Simulacion y Calculo de Metricas}{31}{}%
+\contentsline {chapter}{\numberline {4}Evaluación de Resultados}{33}{}%
+\contentsline {section}{\numberline {4.1}Recoleccion de datos}{33}{}%
+\contentsline {subsection}{\numberline {4.1.1}Erdős-Rényi}{33}{}%
+\contentsline {subsection}{\numberline {4.1.2}Barabási-Albert}{33}{}%
+\contentsline {subsection}{\numberline {4.1.3}Watts-Strogatz}{33}{}%
+\contentsline {subsection}{\numberline {4.1.4}Robustez de los Grafos}{33}{}%
+\contentsline {section}{\numberline {4.2}Analisis y Resultados de datos}{34}{}%
+\contentsline {subsection}{\numberline {4.2.1}Erdős-Rényi}{34}{}%
+\contentsline {subsection}{\numberline {4.2.2}Barabási-Albert}{35}{}%
+\contentsline {subsection}{\numberline {4.2.3}Watts-Strogatz}{35}{}%
+\contentsline {subsection}{\numberline {4.2.4}Tabla de Resultados}{36}{}%
+\contentsline {subsubsection}{Precisión en la Representación}{36}{}%
+\contentsline {subsubsection}{Eficiencia Computacional}{37}{}%
+\contentsline {subsubsection}{Aplicabilidad}{37}{}%
+\contentsline {subsubsection}{Robustez}{37}{}%
+\contentsline {subsection}{\numberline {4.2.5}Demostracion de Hipotesis}{37}{}%
+\contentsline {subsection}{\numberline {4.2.6}Datos Recolectados}{38}{}%
+\contentsline {subsubsection}{Coeficiente de Agrupamiento Promedio (CAP)}{38}{}%
+\contentsline {subsubsection}{Longitud Promedio del Camino Más Corto (CPMC)}{38}{}%
+\contentsline {subsection}{\numberline {4.2.7}Resultados de Robustez}{40}{}%
+\contentsline {subsubsection}{Robustez Frente a Fallos Aleatorios}{40}{}%
+\contentsline {subsubsection}{Robustez Frente a Ataques Dirigidos}{41}{}%
+\contentsline {subsection}{\numberline {4.2.8}Pruebas Estadísticas}{43}{}%
+\contentsline {subsubsection}{Pruebas para el Coeficiente de Agrupamiento Promedio (CAP)}{43}{}%
+\contentsline {subsubsection}{Pruebas para la Longitud Promedio del Camino Más Corto (CPMC)}{43}{}%
+\contentsline {subsubsection}{Pruebas para Robuztes frente a Fallos Aleatorios (media) y Ataques dirigidos (media) }{44}{}%
+\contentsline {subsection}{\numberline {4.2.9}Análisis de Resultados}{44}{}%
+\contentsline {subsubsection}{Aplicaciones Prácticas de los Resultados Obtenidos}{45}{}%
+\contentsline {chapter}{\numberline {5}Conclusiones y recomendaciones}{48}{}%
+\contentsline {section}{\numberline {5.1}Cumplimiento de Objetivos}{48}{}%
+\contentsline {subsection}{\numberline {5.1.1}Objetivos Específicos}{48}{}%
+\contentsline {subsection}{\numberline {5.1.2}Objetivo General}{48}{}%
+\contentsline {subsection}{\numberline {5.1.3}Demostración de la Hipótesis}{49}{}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{50}{}%
+\contentsline {chapter}{Bibliografia}{51}{}%
